@@ -383,7 +383,7 @@
     // OUT
     int output[256];// ALG
     
-    BOM(pat,txt,output);
+    BOM(pat,txt,output); 
     // FOUND?
     XCTAssertTrue(output[0]!=0);
 }
