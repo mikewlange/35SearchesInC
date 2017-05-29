@@ -16,6 +16,51 @@
 		7C01AE281EDBF1F600C10562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C01AE261EDBF1F600C10562 /* LaunchScreen.storyboard */; };
 		7C01AE331EDBF1F600C10562 /* Motekim_SearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AE321EDBF1F600C10562 /* Motekim_SearchTests.m */; };
 		7C01AE3E1EDBF1F600C10562 /* Motekim_SearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AE3D1EDBF1F600C10562 /* Motekim_SearchUITests.m */; };
+		7C01AF8F1EDC00B900C10562 /* MTKBoyerMoore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF181EDC00B900C10562 /* MTKBoyerMoore.m */; };
+		7C01AF901EDC00B900C10562 /* MTKBNDMatching.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF1B1EDC00B900C10562 /* MTKBNDMatching.m */; };
+		7C01AF911EDC00B900C10562 /* MTKForwardDawgMatching.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF1D1EDC00B900C10562 /* MTKForwardDawgMatching.m */; };
+		7C01AF921EDC00B900C10562 /* MTKHorspool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF1F1EDC00B900C10562 /* MTKHorspool.m */; };
+		7C01AF931EDC00B900C10562 /* MTKInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF211EDC00B900C10562 /* MTKInterpolation.m */; };
+		7C01AF941EDC00B900C10562 /* MTKMaximalShift.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF231EDC00B900C10562 /* MTKMaximalShift.m */; };
+		7C01AF951EDC00B900C10562 /* MTKNsn.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF251EDC00B900C10562 /* MTKNsn.m */; };
+		7C01AF961EDC00B900C10562 /* MTKRaita.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF271EDC00B900C10562 /* MTKRaita.m */; };
+		7C01AF971EDC00B900C10562 /* MTKTunedBoyerMoore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF291EDC00B900C10562 /* MTKTunedBoyerMoore.m */; };
+		7C01AF981EDC00B900C10562 /* MTKTurboReverseFactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF2B1EDC00B900C10562 /* MTKTurboReverseFactor.m */; };
+		7C01AF991EDC00B900C10562 /* MTKZAlgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF2D1EDC00B900C10562 /* MTKZAlgo.m */; };
+		7C01AF9A1EDC00B900C10562 /* Algorithms.iml in Resources */ = {isa = PBXBuildFile; fileRef = 7C01AF2F1EDC00B900C10562 /* Algorithms.iml */; };
+		7C01AF9B1EDC00B900C10562 /* misc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C01AF301EDC00B900C10562 /* misc.xml */; };
+		7C01AF9C1EDC00B900C10562 /* modules.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C01AF311EDC00B900C10562 /* modules.xml */; };
+		7C01AF9E1EDC00B900C10562 /* workspace.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C01AF331EDC00B900C10562 /* workspace.xml */; };
+		7C01AF9F1EDC00B900C10562 /* MTKAlphaSkip.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF361EDC00B900C10562 /* MTKAlphaSkip.m */; };
+		7C01AFA01EDC00B900C10562 /* MTKApostolicoCrochemore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF391EDC00B900C10562 /* MTKApostolicoCrochemore.m */; };
+		7C01AFA11EDC00B900C10562 /* MTKApostolicoGiancarlo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF3C1EDC00B900C10562 /* MTKApostolicoGiancarlo.m */; };
+		7C01AFA21EDC00B900C10562 /* MTKBackwardOracle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF3F1EDC00B900C10562 /* MTKBackwardOracle.m */; };
+		7C01AFA31EDC00B900C10562 /* MTKBerryRavindran.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF421EDC00B900C10562 /* MTKBerryRavindran.m */; };
+		7C01AFA41EDC00B900C10562 /* MTKBoyerMooreHorspool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF451EDC00B900C10562 /* MTKBoyerMooreHorspool.m */; };
+		7C01AFA51EDC00B900C10562 /* MTKbruteforce.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF481EDC00B900C10562 /* MTKbruteforce.m */; };
+		7C01AFA61EDC00B900C10562 /* MTKColussi.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF4B1EDC00B900C10562 /* MTKColussi.m */; };
+		7C01AFA71EDC00B900C10562 /* MTKdfaa.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF4E1EDC00B900C10562 /* MTKdfaa.m */; };
+		7C01AFA81EDC00B900C10562 /* MTKGalilGiancarlo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF511EDC00B900C10562 /* MTKGalilGiancarlo.m */; };
+		7C01AFA91EDC00B900C10562 /* MTKGalilSeiferas.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF541EDC00B900C10562 /* MTKGalilSeiferas.m */; };
+		7C01AFAA1EDC00B900C10562 /* MTKKarpRabin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF571EDC00B900C10562 /* MTKKarpRabin.m */; };
+		7C01AFAB1EDC00B900C10562 /* MTKKMPSkip.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF5A1EDC00B900C10562 /* MTKKMPSkip.m */; };
+		7C01AFAC1EDC00B900C10562 /* MTKKnuthMorrisPratt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF5D1EDC00B900C10562 /* MTKKnuthMorrisPratt.m */; };
+		7C01AFAD1EDC00B900C10562 /* MTKMorrisPratt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF601EDC00B900C10562 /* MTKMorrisPratt.m */; };
+		7C01AFAE1EDC00B900C10562 /* MTKOptimalMismatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF631EDC00B900C10562 /* MTKOptimalMismatch.m */; };
+		7C01AFAF1EDC00B900C10562 /* MTKOrderedAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF661EDC00B900C10562 /* MTKOrderedAlpha.m */; };
+		7C01AFB01EDC00B900C10562 /* MTKQuickSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF691EDC00B900C10562 /* MTKQuickSearch.m */; };
+		7C01AFB11EDC00B900C10562 /* MTKRailgun.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF6C1EDC00B900C10562 /* MTKRailgun.m */; };
+		7C01AFB21EDC00B900C10562 /* MOFinateAutomatica.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF6F1EDC00B900C10562 /* MOFinateAutomatica.m */; };
+		7C01AFB31EDC00B900C10562 /* MTKReverseColussi.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF721EDC00B900C10562 /* MTKReverseColussi.m */; };
+		7C01AFB41EDC00B900C10562 /* MTKReverseFactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF751EDC00B900C10562 /* MTKReverseFactor.m */; };
+		7C01AFB51EDC00B900C10562 /* MTKShiftOr.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF781EDC00B900C10562 /* MTKShiftOr.m */; };
+		7C01AFB61EDC00B900C10562 /* MTKSimonAlgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF7B1EDC00B900C10562 /* MTKSimonAlgo.m */; };
+		7C01AFB71EDC00B900C10562 /* MTKSkipSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF7E1EDC00B900C10562 /* MTKSkipSearch.m */; };
+		7C01AFB81EDC00B900C10562 /* MTKTurboBM.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF821EDC00B900C10562 /* MTKTurboBM.m */; };
+		7C01AFB91EDC00B900C10562 /* MTKTwoWay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF851EDC00B900C10562 /* MTKTwoWay.m */; };
+		7C01AFBA1EDC00B900C10562 /* MTKSmith.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF881EDC00B900C10562 /* MTKSmith.m */; };
+		7C01AFBB1EDC00B900C10562 /* MTKZhuTakaoka.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF8B1EDC00B900C10562 /* MTKZhuTakaoka.m */; };
+		7C01AFBC1EDC00B900C10562 /* util.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF8E1EDC00B900C10562 /* util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +98,93 @@
 		7C01AE391EDBF1F600C10562 /* Motekim SearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Motekim SearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C01AE3D1EDBF1F600C10562 /* Motekim_SearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Motekim_SearchUITests.m; sourceTree = "<group>"; };
 		7C01AE3F1EDBF1F600C10562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C01AF151EDC00B900C10562 /* includeme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = includeme.h; sourceTree = "<group>"; };
+		7C01AF171EDC00B900C10562 /* MTKBoyerMoore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKBoyerMoore.h; sourceTree = "<group>"; };
+		7C01AF181EDC00B900C10562 /* MTKBoyerMoore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKBoyerMoore.m; sourceTree = "<group>"; };
+		7C01AF1A1EDC00B900C10562 /* MTKBNDMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKBNDMatching.h; sourceTree = "<group>"; };
+		7C01AF1B1EDC00B900C10562 /* MTKBNDMatching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKBNDMatching.m; sourceTree = "<group>"; };
+		7C01AF1C1EDC00B900C10562 /* MTKForwardDawgMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKForwardDawgMatching.h; sourceTree = "<group>"; };
+		7C01AF1D1EDC00B900C10562 /* MTKForwardDawgMatching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKForwardDawgMatching.m; sourceTree = "<group>"; };
+		7C01AF1E1EDC00B900C10562 /* MTKHorspool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKHorspool.h; sourceTree = "<group>"; };
+		7C01AF1F1EDC00B900C10562 /* MTKHorspool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKHorspool.m; sourceTree = "<group>"; };
+		7C01AF201EDC00B900C10562 /* MTKInterpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKInterpolation.h; sourceTree = "<group>"; };
+		7C01AF211EDC00B900C10562 /* MTKInterpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKInterpolation.m; sourceTree = "<group>"; };
+		7C01AF221EDC00B900C10562 /* MTKMaximalShift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKMaximalShift.h; sourceTree = "<group>"; };
+		7C01AF231EDC00B900C10562 /* MTKMaximalShift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKMaximalShift.m; sourceTree = "<group>"; };
+		7C01AF241EDC00B900C10562 /* MTKNsn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKNsn.h; sourceTree = "<group>"; };
+		7C01AF251EDC00B900C10562 /* MTKNsn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKNsn.m; sourceTree = "<group>"; };
+		7C01AF261EDC00B900C10562 /* MTKRaita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKRaita.h; sourceTree = "<group>"; };
+		7C01AF271EDC00B900C10562 /* MTKRaita.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKRaita.m; sourceTree = "<group>"; };
+		7C01AF281EDC00B900C10562 /* MTKTunedBoyerMoore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKTunedBoyerMoore.h; sourceTree = "<group>"; };
+		7C01AF291EDC00B900C10562 /* MTKTunedBoyerMoore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKTunedBoyerMoore.m; sourceTree = "<group>"; };
+		7C01AF2A1EDC00B900C10562 /* MTKTurboReverseFactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKTurboReverseFactor.h; sourceTree = "<group>"; };
+		7C01AF2B1EDC00B900C10562 /* MTKTurboReverseFactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKTurboReverseFactor.m; sourceTree = "<group>"; };
+		7C01AF2C1EDC00B900C10562 /* MTKZAlgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKZAlgo.h; sourceTree = "<group>"; };
+		7C01AF2D1EDC00B900C10562 /* MTKZAlgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKZAlgo.m; sourceTree = "<group>"; };
+		7C01AF2F1EDC00B900C10562 /* Algorithms.iml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Algorithms.iml; sourceTree = "<group>"; };
+		7C01AF301EDC00B900C10562 /* misc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = misc.xml; sourceTree = "<group>"; };
+		7C01AF311EDC00B900C10562 /* modules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = modules.xml; sourceTree = "<group>"; };
+		7C01AF331EDC00B900C10562 /* workspace.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = workspace.xml; sourceTree = "<group>"; };
+		7C01AF351EDC00B900C10562 /* MTKAlphaSkip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKAlphaSkip.h; sourceTree = "<group>"; };
+		7C01AF361EDC00B900C10562 /* MTKAlphaSkip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKAlphaSkip.m; sourceTree = "<group>"; };
+		7C01AF381EDC00B900C10562 /* MTKApostolicoCrochemore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKApostolicoCrochemore.h; sourceTree = "<group>"; };
+		7C01AF391EDC00B900C10562 /* MTKApostolicoCrochemore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKApostolicoCrochemore.m; sourceTree = "<group>"; };
+		7C01AF3B1EDC00B900C10562 /* MTKApostolicoGiancarlo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKApostolicoGiancarlo.h; sourceTree = "<group>"; };
+		7C01AF3C1EDC00B900C10562 /* MTKApostolicoGiancarlo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKApostolicoGiancarlo.m; sourceTree = "<group>"; };
+		7C01AF3E1EDC00B900C10562 /* MTKBackwardOracle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKBackwardOracle.h; sourceTree = "<group>"; };
+		7C01AF3F1EDC00B900C10562 /* MTKBackwardOracle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKBackwardOracle.m; sourceTree = "<group>"; };
+		7C01AF411EDC00B900C10562 /* MTKBerryRavindran.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKBerryRavindran.h; sourceTree = "<group>"; };
+		7C01AF421EDC00B900C10562 /* MTKBerryRavindran.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKBerryRavindran.m; sourceTree = "<group>"; };
+		7C01AF441EDC00B900C10562 /* MTKBoyerMooreHorspool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKBoyerMooreHorspool.h; sourceTree = "<group>"; };
+		7C01AF451EDC00B900C10562 /* MTKBoyerMooreHorspool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKBoyerMooreHorspool.m; sourceTree = "<group>"; };
+		7C01AF471EDC00B900C10562 /* MTKbruteforce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKbruteforce.h; sourceTree = "<group>"; };
+		7C01AF481EDC00B900C10562 /* MTKbruteforce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKbruteforce.m; sourceTree = "<group>"; };
+		7C01AF4A1EDC00B900C10562 /* MTKColussi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKColussi.h; sourceTree = "<group>"; };
+		7C01AF4B1EDC00B900C10562 /* MTKColussi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKColussi.m; sourceTree = "<group>"; };
+		7C01AF4D1EDC00B900C10562 /* MTKdfaa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKdfaa.h; sourceTree = "<group>"; };
+		7C01AF4E1EDC00B900C10562 /* MTKdfaa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKdfaa.m; sourceTree = "<group>"; };
+		7C01AF501EDC00B900C10562 /* MTKGalilGiancarlo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKGalilGiancarlo.h; sourceTree = "<group>"; };
+		7C01AF511EDC00B900C10562 /* MTKGalilGiancarlo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKGalilGiancarlo.m; sourceTree = "<group>"; };
+		7C01AF531EDC00B900C10562 /* MTKGalilSeiferas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKGalilSeiferas.h; sourceTree = "<group>"; };
+		7C01AF541EDC00B900C10562 /* MTKGalilSeiferas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKGalilSeiferas.m; sourceTree = "<group>"; };
+		7C01AF561EDC00B900C10562 /* MTKKarpRabin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKKarpRabin.h; sourceTree = "<group>"; };
+		7C01AF571EDC00B900C10562 /* MTKKarpRabin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKKarpRabin.m; sourceTree = "<group>"; };
+		7C01AF591EDC00B900C10562 /* MTKKMPSkip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKKMPSkip.h; sourceTree = "<group>"; };
+		7C01AF5A1EDC00B900C10562 /* MTKKMPSkip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKKMPSkip.m; sourceTree = "<group>"; };
+		7C01AF5C1EDC00B900C10562 /* MTKKnuthMorrisPratt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKKnuthMorrisPratt.h; sourceTree = "<group>"; };
+		7C01AF5D1EDC00B900C10562 /* MTKKnuthMorrisPratt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKKnuthMorrisPratt.m; sourceTree = "<group>"; };
+		7C01AF5F1EDC00B900C10562 /* MTKMorrisPratt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKMorrisPratt.h; sourceTree = "<group>"; };
+		7C01AF601EDC00B900C10562 /* MTKMorrisPratt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKMorrisPratt.m; sourceTree = "<group>"; };
+		7C01AF621EDC00B900C10562 /* MTKOptimalMismatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKOptimalMismatch.h; sourceTree = "<group>"; };
+		7C01AF631EDC00B900C10562 /* MTKOptimalMismatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKOptimalMismatch.m; sourceTree = "<group>"; };
+		7C01AF651EDC00B900C10562 /* MTKOrderedAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKOrderedAlpha.h; sourceTree = "<group>"; };
+		7C01AF661EDC00B900C10562 /* MTKOrderedAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKOrderedAlpha.m; sourceTree = "<group>"; };
+		7C01AF681EDC00B900C10562 /* MTKQuickSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKQuickSearch.h; sourceTree = "<group>"; };
+		7C01AF691EDC00B900C10562 /* MTKQuickSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKQuickSearch.m; sourceTree = "<group>"; };
+		7C01AF6B1EDC00B900C10562 /* MTKRailgun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKRailgun.h; sourceTree = "<group>"; };
+		7C01AF6C1EDC00B900C10562 /* MTKRailgun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKRailgun.m; sourceTree = "<group>"; };
+		7C01AF6E1EDC00B900C10562 /* MOFinateAutomatica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOFinateAutomatica.h; sourceTree = "<group>"; };
+		7C01AF6F1EDC00B900C10562 /* MOFinateAutomatica.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOFinateAutomatica.m; sourceTree = "<group>"; };
+		7C01AF711EDC00B900C10562 /* MTKReverseColussi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKReverseColussi.h; sourceTree = "<group>"; };
+		7C01AF721EDC00B900C10562 /* MTKReverseColussi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKReverseColussi.m; sourceTree = "<group>"; };
+		7C01AF741EDC00B900C10562 /* MTKReverseFactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKReverseFactor.h; sourceTree = "<group>"; };
+		7C01AF751EDC00B900C10562 /* MTKReverseFactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKReverseFactor.m; sourceTree = "<group>"; };
+		7C01AF771EDC00B900C10562 /* MTKShiftOr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKShiftOr.h; sourceTree = "<group>"; };
+		7C01AF781EDC00B900C10562 /* MTKShiftOr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKShiftOr.m; sourceTree = "<group>"; };
+		7C01AF7A1EDC00B900C10562 /* MTKSimonAlgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKSimonAlgo.h; sourceTree = "<group>"; };
+		7C01AF7B1EDC00B900C10562 /* MTKSimonAlgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKSimonAlgo.m; sourceTree = "<group>"; };
+		7C01AF7D1EDC00B900C10562 /* MTKSkipSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKSkipSearch.h; sourceTree = "<group>"; };
+		7C01AF7E1EDC00B900C10562 /* MTKSkipSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKSkipSearch.m; sourceTree = "<group>"; };
+		7C01AF811EDC00B900C10562 /* MTKTurboBM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKTurboBM.h; sourceTree = "<group>"; };
+		7C01AF821EDC00B900C10562 /* MTKTurboBM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKTurboBM.m; sourceTree = "<group>"; };
+		7C01AF841EDC00B900C10562 /* MTKTwoWay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKTwoWay.h; sourceTree = "<group>"; };
+		7C01AF851EDC00B900C10562 /* MTKTwoWay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKTwoWay.m; sourceTree = "<group>"; };
+		7C01AF871EDC00B900C10562 /* MTKSmith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKSmith.h; sourceTree = "<group>"; };
+		7C01AF881EDC00B900C10562 /* MTKSmith.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKSmith.m; sourceTree = "<group>"; };
+		7C01AF8A1EDC00B900C10562 /* MTKZhuTakaoka.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKZhuTakaoka.h; sourceTree = "<group>"; };
+		7C01AF8B1EDC00B900C10562 /* MTKZhuTakaoka.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKZhuTakaoka.m; sourceTree = "<group>"; };
+		7C01AF8D1EDC00B900C10562 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		7C01AF8E1EDC00B900C10562 /* util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = util.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +235,41 @@
 		7C01AE141EDBF1F600C10562 /* Motekim Search */ = {
 			isa = PBXGroup;
 			children = (
+				7C01AF151EDC00B900C10562 /* includeme.h */,
+				7C01AF161EDC00B900C10562 /*  Boyer-Moore algorithm */,
+				7C01AF191EDC00B900C10562 /*  Not Implimented */,
+				7C01AF2E1EDC00B900C10562 /* .idea */,
+				7C01AF341EDC00B900C10562 /* Alpha Skip */,
+				7C01AF371EDC00B900C10562 /* Apostolico-Crochemore algorithm */,
+				7C01AF3A1EDC00B900C10562 /* Apostolico-Giancarlo algorithm */,
+				7C01AF3D1EDC00B900C10562 /* BackwardOracle */,
+				7C01AF401EDC00B900C10562 /* Berry-Ravindran algorithm */,
+				7C01AF431EDC00B900C10562 /* Boyer-Moore-Horspool */,
+				7C01AF461EDC00B900C10562 /* BRUTE FORCE SEARCH */,
+				7C01AF491EDC00B900C10562 /* Colussi algorithm */,
+				7C01AF4C1EDC00B900C10562 /* Deterministic Finite Automaton algorithm */,
+				7C01AF4F1EDC00B900C10562 /* Galil-Giancarlo algorithm */,
+				7C01AF521EDC00B900C10562 /* Galil-Seiferas */,
+				7C01AF551EDC00B900C10562 /* Karp-Rabin algorithm */,
+				7C01AF581EDC00B900C10562 /* KMP Skip Search algorithm */,
+				7C01AF5B1EDC00B900C10562 /* Knuth-Morris-Pratt */,
+				7C01AF5E1EDC00B900C10562 /* Morris-Pratt */,
+				7C01AF611EDC00B900C10562 /* Optimal Mismatch algorithm */,
+				7C01AF641EDC00B900C10562 /* Ordered Alphabets */,
+				7C01AF671EDC00B900C10562 /* Quick Search */,
+				7C01AF6A1EDC00B900C10562 /* Railgun String Search */,
+				7C01AF6D1EDC00B900C10562 /* Research with an automaton search */,
+				7C01AF701EDC00B900C10562 /* Reverse Colussi algorithm */,
+				7C01AF731EDC00B900C10562 /* Reverse Fuck All */,
+				7C01AF761EDC00B900C10562 /* Shifty and Fuzzy */,
+				7C01AF791EDC00B900C10562 /* SIMON! */,
+				7C01AF7C1EDC00B900C10562 /* Skip Search */,
+				7C01AF7F1EDC00B900C10562 /* Tuned  */,
+				7C01AF801EDC00B900C10562 /* Turbo-BM algorithm */,
+				7C01AF831EDC00B900C10562 /* Two Way Search */,
+				7C01AF861EDC00B900C10562 /* Viva Hate */,
+				7C01AF891EDC00B900C10562 /* Zhu-Takaoka algorithm */,
+				7C01AF8C1EDC00B900C10562 /* Utilities */,
 				7C01AE181EDBF1F600C10562 /* AppDelegate.h */,
 				7C01AE191EDBF1F600C10562 /* AppDelegate.m */,
 				7C01AE1B1EDBF1F600C10562 /* ViewController.h */,
@@ -141,6 +308,330 @@
 				7C01AE3F1EDBF1F600C10562 /* Info.plist */,
 			);
 			path = "Motekim SearchUITests";
+			sourceTree = "<group>";
+		};
+		7C01AF161EDC00B900C10562 /*  Boyer-Moore algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF171EDC00B900C10562 /* MTKBoyerMoore.h */,
+				7C01AF181EDC00B900C10562 /* MTKBoyerMoore.m */,
+			);
+			path = " Boyer-Moore algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF191EDC00B900C10562 /*  Not Implimented */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF1A1EDC00B900C10562 /* MTKBNDMatching.h */,
+				7C01AF1B1EDC00B900C10562 /* MTKBNDMatching.m */,
+				7C01AF1C1EDC00B900C10562 /* MTKForwardDawgMatching.h */,
+				7C01AF1D1EDC00B900C10562 /* MTKForwardDawgMatching.m */,
+				7C01AF1E1EDC00B900C10562 /* MTKHorspool.h */,
+				7C01AF1F1EDC00B900C10562 /* MTKHorspool.m */,
+				7C01AF201EDC00B900C10562 /* MTKInterpolation.h */,
+				7C01AF211EDC00B900C10562 /* MTKInterpolation.m */,
+				7C01AF221EDC00B900C10562 /* MTKMaximalShift.h */,
+				7C01AF231EDC00B900C10562 /* MTKMaximalShift.m */,
+				7C01AF241EDC00B900C10562 /* MTKNsn.h */,
+				7C01AF251EDC00B900C10562 /* MTKNsn.m */,
+				7C01AF261EDC00B900C10562 /* MTKRaita.h */,
+				7C01AF271EDC00B900C10562 /* MTKRaita.m */,
+				7C01AF281EDC00B900C10562 /* MTKTunedBoyerMoore.h */,
+				7C01AF291EDC00B900C10562 /* MTKTunedBoyerMoore.m */,
+				7C01AF2A1EDC00B900C10562 /* MTKTurboReverseFactor.h */,
+				7C01AF2B1EDC00B900C10562 /* MTKTurboReverseFactor.m */,
+				7C01AF2C1EDC00B900C10562 /* MTKZAlgo.h */,
+				7C01AF2D1EDC00B900C10562 /* MTKZAlgo.m */,
+			);
+			path = " Not Implimented";
+			sourceTree = "<group>";
+		};
+		7C01AF2E1EDC00B900C10562 /* .idea */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF2F1EDC00B900C10562 /* Algorithms.iml */,
+				7C01AF301EDC00B900C10562 /* misc.xml */,
+				7C01AF311EDC00B900C10562 /* modules.xml */,
+				7C01AF331EDC00B900C10562 /* workspace.xml */,
+			);
+			path = .idea;
+			sourceTree = "<group>";
+		};
+		7C01AF341EDC00B900C10562 /* Alpha Skip */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF351EDC00B900C10562 /* MTKAlphaSkip.h */,
+				7C01AF361EDC00B900C10562 /* MTKAlphaSkip.m */,
+			);
+			path = "Alpha Skip";
+			sourceTree = "<group>";
+		};
+		7C01AF371EDC00B900C10562 /* Apostolico-Crochemore algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF381EDC00B900C10562 /* MTKApostolicoCrochemore.h */,
+				7C01AF391EDC00B900C10562 /* MTKApostolicoCrochemore.m */,
+			);
+			path = "Apostolico-Crochemore algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF3A1EDC00B900C10562 /* Apostolico-Giancarlo algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF3B1EDC00B900C10562 /* MTKApostolicoGiancarlo.h */,
+				7C01AF3C1EDC00B900C10562 /* MTKApostolicoGiancarlo.m */,
+			);
+			path = "Apostolico-Giancarlo algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF3D1EDC00B900C10562 /* BackwardOracle */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF3E1EDC00B900C10562 /* MTKBackwardOracle.h */,
+				7C01AF3F1EDC00B900C10562 /* MTKBackwardOracle.m */,
+			);
+			path = BackwardOracle;
+			sourceTree = "<group>";
+		};
+		7C01AF401EDC00B900C10562 /* Berry-Ravindran algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF411EDC00B900C10562 /* MTKBerryRavindran.h */,
+				7C01AF421EDC00B900C10562 /* MTKBerryRavindran.m */,
+			);
+			path = "Berry-Ravindran algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF431EDC00B900C10562 /* Boyer-Moore-Horspool */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF441EDC00B900C10562 /* MTKBoyerMooreHorspool.h */,
+				7C01AF451EDC00B900C10562 /* MTKBoyerMooreHorspool.m */,
+			);
+			path = "Boyer-Moore-Horspool";
+			sourceTree = "<group>";
+		};
+		7C01AF461EDC00B900C10562 /* BRUTE FORCE SEARCH */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF471EDC00B900C10562 /* MTKbruteforce.h */,
+				7C01AF481EDC00B900C10562 /* MTKbruteforce.m */,
+			);
+			path = "BRUTE FORCE SEARCH";
+			sourceTree = "<group>";
+		};
+		7C01AF491EDC00B900C10562 /* Colussi algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF4A1EDC00B900C10562 /* MTKColussi.h */,
+				7C01AF4B1EDC00B900C10562 /* MTKColussi.m */,
+			);
+			path = "Colussi algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF4C1EDC00B900C10562 /* Deterministic Finite Automaton algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF4D1EDC00B900C10562 /* MTKdfaa.h */,
+				7C01AF4E1EDC00B900C10562 /* MTKdfaa.m */,
+			);
+			path = "Deterministic Finite Automaton algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF4F1EDC00B900C10562 /* Galil-Giancarlo algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF501EDC00B900C10562 /* MTKGalilGiancarlo.h */,
+				7C01AF511EDC00B900C10562 /* MTKGalilGiancarlo.m */,
+			);
+			path = "Galil-Giancarlo algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF521EDC00B900C10562 /* Galil-Seiferas */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF531EDC00B900C10562 /* MTKGalilSeiferas.h */,
+				7C01AF541EDC00B900C10562 /* MTKGalilSeiferas.m */,
+			);
+			path = "Galil-Seiferas";
+			sourceTree = "<group>";
+		};
+		7C01AF551EDC00B900C10562 /* Karp-Rabin algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF561EDC00B900C10562 /* MTKKarpRabin.h */,
+				7C01AF571EDC00B900C10562 /* MTKKarpRabin.m */,
+			);
+			path = "Karp-Rabin algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF581EDC00B900C10562 /* KMP Skip Search algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF591EDC00B900C10562 /* MTKKMPSkip.h */,
+				7C01AF5A1EDC00B900C10562 /* MTKKMPSkip.m */,
+			);
+			path = "KMP Skip Search algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF5B1EDC00B900C10562 /* Knuth-Morris-Pratt */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF5C1EDC00B900C10562 /* MTKKnuthMorrisPratt.h */,
+				7C01AF5D1EDC00B900C10562 /* MTKKnuthMorrisPratt.m */,
+			);
+			path = "Knuth-Morris-Pratt";
+			sourceTree = "<group>";
+		};
+		7C01AF5E1EDC00B900C10562 /* Morris-Pratt */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF5F1EDC00B900C10562 /* MTKMorrisPratt.h */,
+				7C01AF601EDC00B900C10562 /* MTKMorrisPratt.m */,
+			);
+			path = "Morris-Pratt";
+			sourceTree = "<group>";
+		};
+		7C01AF611EDC00B900C10562 /* Optimal Mismatch algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF621EDC00B900C10562 /* MTKOptimalMismatch.h */,
+				7C01AF631EDC00B900C10562 /* MTKOptimalMismatch.m */,
+			);
+			path = "Optimal Mismatch algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF641EDC00B900C10562 /* Ordered Alphabets */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF651EDC00B900C10562 /* MTKOrderedAlpha.h */,
+				7C01AF661EDC00B900C10562 /* MTKOrderedAlpha.m */,
+			);
+			path = "Ordered Alphabets";
+			sourceTree = "<group>";
+		};
+		7C01AF671EDC00B900C10562 /* Quick Search */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF681EDC00B900C10562 /* MTKQuickSearch.h */,
+				7C01AF691EDC00B900C10562 /* MTKQuickSearch.m */,
+			);
+			path = "Quick Search";
+			sourceTree = "<group>";
+		};
+		7C01AF6A1EDC00B900C10562 /* Railgun String Search */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF6B1EDC00B900C10562 /* MTKRailgun.h */,
+				7C01AF6C1EDC00B900C10562 /* MTKRailgun.m */,
+			);
+			path = "Railgun String Search";
+			sourceTree = "<group>";
+		};
+		7C01AF6D1EDC00B900C10562 /* Research with an automaton search */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF6E1EDC00B900C10562 /* MOFinateAutomatica.h */,
+				7C01AF6F1EDC00B900C10562 /* MOFinateAutomatica.m */,
+			);
+			path = "Research with an automaton search";
+			sourceTree = "<group>";
+		};
+		7C01AF701EDC00B900C10562 /* Reverse Colussi algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF711EDC00B900C10562 /* MTKReverseColussi.h */,
+				7C01AF721EDC00B900C10562 /* MTKReverseColussi.m */,
+			);
+			path = "Reverse Colussi algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF731EDC00B900C10562 /* Reverse Fuck All */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF741EDC00B900C10562 /* MTKReverseFactor.h */,
+				7C01AF751EDC00B900C10562 /* MTKReverseFactor.m */,
+			);
+			path = "Reverse Fuck All";
+			sourceTree = "<group>";
+		};
+		7C01AF761EDC00B900C10562 /* Shifty and Fuzzy */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF771EDC00B900C10562 /* MTKShiftOr.h */,
+				7C01AF781EDC00B900C10562 /* MTKShiftOr.m */,
+			);
+			path = "Shifty and Fuzzy";
+			sourceTree = "<group>";
+		};
+		7C01AF791EDC00B900C10562 /* SIMON! */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF7A1EDC00B900C10562 /* MTKSimonAlgo.h */,
+				7C01AF7B1EDC00B900C10562 /* MTKSimonAlgo.m */,
+			);
+			path = "SIMON!";
+			sourceTree = "<group>";
+		};
+		7C01AF7C1EDC00B900C10562 /* Skip Search */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF7D1EDC00B900C10562 /* MTKSkipSearch.h */,
+				7C01AF7E1EDC00B900C10562 /* MTKSkipSearch.m */,
+			);
+			path = "Skip Search";
+			sourceTree = "<group>";
+		};
+		7C01AF7F1EDC00B900C10562 /* Tuned  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tuned ";
+			sourceTree = "<group>";
+		};
+		7C01AF801EDC00B900C10562 /* Turbo-BM algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF811EDC00B900C10562 /* MTKTurboBM.h */,
+				7C01AF821EDC00B900C10562 /* MTKTurboBM.m */,
+			);
+			path = "Turbo-BM algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF831EDC00B900C10562 /* Two Way Search */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF841EDC00B900C10562 /* MTKTwoWay.h */,
+				7C01AF851EDC00B900C10562 /* MTKTwoWay.m */,
+			);
+			path = "Two Way Search";
+			sourceTree = "<group>";
+		};
+		7C01AF861EDC00B900C10562 /* Viva Hate */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF871EDC00B900C10562 /* MTKSmith.h */,
+				7C01AF881EDC00B900C10562 /* MTKSmith.m */,
+			);
+			path = "Viva Hate";
+			sourceTree = "<group>";
+		};
+		7C01AF891EDC00B900C10562 /* Zhu-Takaoka algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF8A1EDC00B900C10562 /* MTKZhuTakaoka.h */,
+				7C01AF8B1EDC00B900C10562 /* MTKZhuTakaoka.m */,
+			);
+			path = "Zhu-Takaoka algorithm";
+			sourceTree = "<group>";
+		};
+		7C01AF8C1EDC00B900C10562 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AF8D1EDC00B900C10562 /* util.h */,
+				7C01AF8E1EDC00B900C10562 /* util.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +743,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C01AF9E1EDC00B900C10562 /* workspace.xml in Resources */,
+				7C01AF9A1EDC00B900C10562 /* Algorithms.iml in Resources */,
+				7C01AF9B1EDC00B900C10562 /* misc.xml in Resources */,
 				7C01AE281EDBF1F600C10562 /* LaunchScreen.storyboard in Resources */,
 				7C01AE251EDBF1F600C10562 /* Assets.xcassets in Resources */,
 				7C01AE201EDBF1F600C10562 /* Main.storyboard in Resources */,
+				7C01AF9C1EDC00B900C10562 /* modules.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +774,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C01AFA31EDC00B900C10562 /* MTKBerryRavindran.m in Sources */,
+				7C01AFA01EDC00B900C10562 /* MTKApostolicoCrochemore.m in Sources */,
 				7C01AE1D1EDBF1F600C10562 /* ViewController.m in Sources */,
 				7C01AE1A1EDBF1F600C10562 /* AppDelegate.m in Sources */,
+				7C01AFA61EDC00B900C10562 /* MTKColussi.m in Sources */,
+				7C01AFB01EDC00B900C10562 /* MTKQuickSearch.m in Sources */,
+				7C01AFA91EDC00B900C10562 /* MTKGalilSeiferas.m in Sources */,
+				7C01AFB31EDC00B900C10562 /* MTKReverseColussi.m in Sources */,
+				7C01AFBC1EDC00B900C10562 /* util.m in Sources */,
+				7C01AFAE1EDC00B900C10562 /* MTKOptimalMismatch.m in Sources */,
+				7C01AFAF1EDC00B900C10562 /* MTKOrderedAlpha.m in Sources */,
+				7C01AFAA1EDC00B900C10562 /* MTKKarpRabin.m in Sources */,
+				7C01AF9F1EDC00B900C10562 /* MTKAlphaSkip.m in Sources */,
+				7C01AF951EDC00B900C10562 /* MTKNsn.m in Sources */,
+				7C01AFB61EDC00B900C10562 /* MTKSimonAlgo.m in Sources */,
+				7C01AF921EDC00B900C10562 /* MTKHorspool.m in Sources */,
+				7C01AFB81EDC00B900C10562 /* MTKTurboBM.m in Sources */,
+				7C01AFBB1EDC00B900C10562 /* MTKZhuTakaoka.m in Sources */,
+				7C01AFB51EDC00B900C10562 /* MTKShiftOr.m in Sources */,
+				7C01AF991EDC00B900C10562 /* MTKZAlgo.m in Sources */,
+				7C01AFA71EDC00B900C10562 /* MTKdfaa.m in Sources */,
+				7C01AFB11EDC00B900C10562 /* MTKRailgun.m in Sources */,
+				7C01AFB41EDC00B900C10562 /* MTKReverseFactor.m in Sources */,
+				7C01AFB91EDC00B900C10562 /* MTKTwoWay.m in Sources */,
+				7C01AF901EDC00B900C10562 /* MTKBNDMatching.m in Sources */,
+				7C01AFA51EDC00B900C10562 /* MTKbruteforce.m in Sources */,
+				7C01AF981EDC00B900C10562 /* MTKTurboReverseFactor.m in Sources */,
+				7C01AFBA1EDC00B900C10562 /* MTKSmith.m in Sources */,
+				7C01AF8F1EDC00B900C10562 /* MTKBoyerMoore.m in Sources */,
+				7C01AF961EDC00B900C10562 /* MTKRaita.m in Sources */,
+				7C01AFA11EDC00B900C10562 /* MTKApostolicoGiancarlo.m in Sources */,
+				7C01AF911EDC00B900C10562 /* MTKForwardDawgMatching.m in Sources */,
 				7C01AE231EDBF1F600C10562 /* Motekim_Search.xcdatamodeld in Sources */,
+				7C01AFA21EDC00B900C10562 /* MTKBackwardOracle.m in Sources */,
+				7C01AFAD1EDC00B900C10562 /* MTKMorrisPratt.m in Sources */,
+				7C01AF941EDC00B900C10562 /* MTKMaximalShift.m in Sources */,
+				7C01AFB71EDC00B900C10562 /* MTKSkipSearch.m in Sources */,
+				7C01AFA81EDC00B900C10562 /* MTKGalilGiancarlo.m in Sources */,
+				7C01AF971EDC00B900C10562 /* MTKTunedBoyerMoore.m in Sources */,
+				7C01AFB21EDC00B900C10562 /* MOFinateAutomatica.m in Sources */,
+				7C01AFA41EDC00B900C10562 /* MTKBoyerMooreHorspool.m in Sources */,
+				7C01AF931EDC00B900C10562 /* MTKInterpolation.m in Sources */,
+				7C01AFAC1EDC00B900C10562 /* MTKKnuthMorrisPratt.m in Sources */,
+				7C01AFAB1EDC00B900C10562 /* MTKKMPSkip.m in Sources */,
 				7C01AE171EDBF1F600C10562 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
