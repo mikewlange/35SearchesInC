@@ -12,3 +12,4 @@
 
 @end
 void KMPSKIP(char *x,char *y, int* output);
+ 
