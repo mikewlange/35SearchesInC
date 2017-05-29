@@ -61,6 +61,7 @@
 		7C01AFBA1EDC00B900C10562 /* MTKSmith.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF881EDC00B900C10562 /* MTKSmith.m */; };
 		7C01AFBB1EDC00B900C10562 /* MTKZhuTakaoka.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF8B1EDC00B900C10562 /* MTKZhuTakaoka.m */; };
 		7C01AFBC1EDC00B900C10562 /* util.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF8E1EDC00B900C10562 /* util.m */; };
+		7C01AFC51EDC3BE400C10562 /* MTKShiftAnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AFC41EDC3BE400C10562 /* MTKShiftAnd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +186,12 @@
 		7C01AF8B1EDC00B900C10562 /* MTKZhuTakaoka.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKZhuTakaoka.m; sourceTree = "<group>"; };
 		7C01AF8D1EDC00B900C10562 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		7C01AF8E1EDC00B900C10562 /* util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = util.m; sourceTree = "<group>"; };
+		7C01AFC31EDC3BE400C10562 /* MTKShiftAnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTKShiftAnd.h; path = fastest/ShiftAnd/MTKShiftAnd.h; sourceTree = "<group>"; };
+		7C01AFC41EDC3BE400C10562 /* MTKShiftAnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTKShiftAnd.m; path = fastest/ShiftAnd/MTKShiftAnd.m; sourceTree = "<group>"; };
+		7C01AFC81EDC3C2A00C10562 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		7C01AFCA1EDC3C2A00C10562 /* log2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log2.h; sourceTree = "<group>"; };
+		7C01AFCC1EDC3C2A00C10562 /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
+		7C01AFCD1EDC3C2A00C10562 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +222,7 @@
 		7C01AE091EDBF1F600C10562 = {
 			isa = PBXGroup;
 			children = (
+				7C01AFC61EDC3C2A00C10562 /* include */,
 				7C01AE141EDBF1F600C10562 /* Motekim Search */,
 				7C01AE311EDBF1F600C10562 /* Motekim SearchTests */,
 				7C01AE3C1EDBF1F600C10562 /* Motekim SearchUITests */,
@@ -235,6 +243,8 @@
 		7C01AE141EDBF1F600C10562 /* Motekim Search */ = {
 			isa = PBXGroup;
 			children = (
+				7C01AFC11EDC3B8A00C10562 /* Known Fastest */,
+				7C01AFBD1EDC14ED00C10562 /* BMH-BNDM */,
 				7C01AF151EDC00B900C10562 /* includeme.h */,
 				7C01AF161EDC00B900C10562 /*  Boyer-Moore algorithm */,
 				7C01AF191EDC00B900C10562 /*  Not Implimented */,
@@ -634,6 +644,41 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		7C01AFBD1EDC14ED00C10562 /* BMH-BNDM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "BMH-BNDM";
+			sourceTree = "<group>";
+		};
+		7C01AFC11EDC3B8A00C10562 /* Known Fastest */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AFC21EDC3B9D00C10562 /* ShiftAnd */,
+			);
+			name = "Known Fastest";
+			sourceTree = "<group>";
+		};
+		7C01AFC21EDC3B9D00C10562 /* ShiftAnd */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AFC31EDC3BE400C10562 /* MTKShiftAnd.h */,
+				7C01AFC41EDC3BE400C10562 /* MTKShiftAnd.m */,
+			);
+			name = ShiftAnd;
+			sourceTree = "<group>";
+		};
+		7C01AFC61EDC3C2A00C10562 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AFC81EDC3C2A00C10562 /* define.h */,
+				7C01AFCA1EDC3C2A00C10562 /* log2.h */,
+				7C01AFCC1EDC3C2A00C10562 /* stats.h */,
+				7C01AFCD1EDC3C2A00C10562 /* timer.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -809,6 +854,7 @@
 				7C01AE231EDBF1F600C10562 /* Motekim_Search.xcdatamodeld in Sources */,
 				7C01AFA21EDC00B900C10562 /* MTKBackwardOracle.m in Sources */,
 				7C01AFAD1EDC00B900C10562 /* MTKMorrisPratt.m in Sources */,
+				7C01AFC51EDC3BE400C10562 /* MTKShiftAnd.m in Sources */,
 				7C01AF941EDC00B900C10562 /* MTKMaximalShift.m in Sources */,
 				7C01AFB71EDC00B900C10562 /* MTKSkipSearch.m in Sources */,
 				7C01AFA81EDC00B900C10562 /* MTKGalilGiancarlo.m in Sources */,
@@ -1058,6 +1104,7 @@
 				7C01AE441EDBF1F600C10562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C01AE451EDBF1F600C10562 /* Build configuration list for PBXNativeTarget "Motekim SearchTests" */ = {
 			isa = XCConfigurationList;
@@ -1066,6 +1113,7 @@
 				7C01AE471EDBF1F600C10562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C01AE481EDBF1F600C10562 /* Build configuration list for PBXNativeTarget "Motekim SearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -1074,6 +1122,7 @@
 				7C01AE4A1EDBF1F600C10562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

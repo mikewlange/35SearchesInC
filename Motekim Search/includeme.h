@@ -16,4 +16,7 @@
 #include <math.h> 
 #include <limits.h>
 #import "util.h"
+#import "stats.h"
+#import "timer.h"
+#import "define.h"
 #endif /* includeme_h */

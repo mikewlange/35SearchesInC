@@ -31,7 +31,7 @@
 #import "MTKColussi.h"
 #import "includeme.h"
 @implementation MTKColussi
-#define XSIZE   20
+
 #define ASIZE   256
 
 int preColussi(char *x, int m, int h[], int next[], int shift[]) {

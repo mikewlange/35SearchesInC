@@ -33,7 +33,7 @@
 #include "includeme.h"
 @implementation MTKNsn
 
-#define XSIZE   20
+
 #define ASIZE   256
 void MTKNSN(char *x, char *y, int *output) {
     

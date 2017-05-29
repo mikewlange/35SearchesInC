@@ -9,7 +9,7 @@
 #import "MTKSmith.h"
 #import "includeme.h"
 @implementation MTKSmith
-#define XSIZE   20
+
 #define ASIZE   256
 void SMITH(char *x, int m, char *y, int n, int*output) {
     int j, bmBc[ASIZE], qsBc[ASIZE];

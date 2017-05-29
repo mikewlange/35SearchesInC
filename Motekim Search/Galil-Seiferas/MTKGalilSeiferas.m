@@ -14,7 +14,7 @@ char *x, *y;
 int k, m, n, pp, pp1, pp2, q, q1, q2, s;
 int* outpput2 = 0;
 int localcount = 0;
-#define XSIZE   20
+
 #define ASIZE   256
 void search() {
     while (pp <= n - m) {

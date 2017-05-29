@@ -29,7 +29,7 @@
 @implementation MTKKMPSkip
 
 
-#define XSIZE   20
+
 #define ASIZE   256
 void skpreMp(char *x, int m, int mpNext[]) {
     int i, j;

@@ -10,7 +10,7 @@
 #import "includeme.h"
 #import "util.h"
 @implementation MTKSkipSearch
-#define XSIZE   20
+
 #define ASIZE   256//
 
 void SKIP(char *x,char *y, int*output) {

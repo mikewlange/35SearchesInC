@@ -20,7 +20,7 @@
 #import "MTKZhuTakaoka.h"
 #import "includeme.h"
 @implementation MTKZhuTakaoka
-#define XSIZE   20
+
 #define ASIZE   256
 
 void preZtBc(char *x, int m, int ztBc[ASIZE][ASIZE]) {

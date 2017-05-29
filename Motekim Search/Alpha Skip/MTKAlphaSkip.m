@@ -27,7 +27,7 @@
 #import "includeme.h"
 #import "util.h"
 @implementation MTKAlphaSkip
-#define XSIZE   20
+
 #define ASIZE   256
 
 List *z;

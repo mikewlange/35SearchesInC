@@ -24,7 +24,7 @@
 // more: http://www-igm.univ-mlv.fr/~lecroq/string/node12.html#SECTION00120
 
 @implementation MTKApostolicoCrochemore
-#define XSIZE   20
+
 #define ASIZE   256
 void preKmp(char *x, int m, int kmpNext[]) {
     int i, j;

@@ -24,7 +24,7 @@
 #import "MTKApostolicoGiancarlo.h"
 #import "includeme.h"
 @implementation MTKApostolicoGiancarlo
-#define XSIZE   20
+
 #define ASIZE   256
 
 void AGSearch(char *x, char *y, int*output) {

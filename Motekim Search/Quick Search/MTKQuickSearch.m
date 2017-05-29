@@ -28,7 +28,7 @@
 #import "MTKQuickSearch.h"
 #import "includeme.h"
 @implementation MTKQuickSearch
-#define XSIZE   20
+
 #define ASIZE   256
 void preQsBcQS(char *x, int m, int qsBc[]) {
     int i;

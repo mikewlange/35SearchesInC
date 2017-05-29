@@ -21,7 +21,7 @@
 #import "includeme.h"
 @implementation MTKReverseColussi
 
-#define XSIZE   20
+
 #define ASIZE   256
 
 

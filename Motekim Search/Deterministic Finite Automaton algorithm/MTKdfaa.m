@@ -48,7 +48,7 @@
 // V1
 //http://www-igm.univ-mlv.fr/~lecroq/string/node4.html#SECTION0040
 //
-#define XSIZE   20
+
 #define ASIZE   256
 void preAut(char *x, int m, Graph aut) {
     int i, state, target, oldTarget;

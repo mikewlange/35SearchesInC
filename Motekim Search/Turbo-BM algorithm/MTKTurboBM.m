@@ -11,7 +11,7 @@
 @implementation MTKTurboBM
 
 
-#define XSIZE   20
+
 #define ASIZE   256
 void TBM(char *x, char *y, int *output) {
     

@@ -16,7 +16,7 @@
 #import "MTKBerryRavindran.h"
 #import "includeme.h"
 
-#define XSIZE   20
+
 #define SIGMA   256
 @implementation MTKBerryRavindran
 void preBrBc(unsigned char *x, int m, int brBc[SIGMA][SIGMA]) {

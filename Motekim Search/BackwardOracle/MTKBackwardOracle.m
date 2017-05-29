@@ -15,7 +15,7 @@
 #define FALSE      0
 #define TRUE       1
 
-#define XSIZE   20
+
 #define ASIZE   256
 
 int BOgetTransition(char *x, int p, List L[], char c) {

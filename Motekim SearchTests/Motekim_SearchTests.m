@@ -40,6 +40,7 @@
 #import "MTKSkipSearch.h"
 #import "MTKKMPSkip.h"
 #import "MTKAlphaSkip.h"
+#import "MTKShiftAnd.h"
 @interface MotekimSearchAlgosTests : XCTestCase
 
 @end
@@ -84,7 +85,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     MTKMorrisPrattSearch(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -101,7 +102,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     MTKKMPSearch(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -119,7 +120,7 @@
     char *pat = "hgdgh";
     // OUT
     int q = 101;
-    int output[256];
+    int output[256] = {0};;
     
     KRsearch(pat,txt,q,output);// ALG
     // FOUND?
@@ -140,7 +141,7 @@
 //    // PATTERN
 //    char *pat = "hgdgh";
 //    // OUT
-//        int output[256];// ALG
+//        int output[256] = {0};;// ALG
 //
 //    DFAA(txt,pat,output);
 //    // FOUND?
@@ -153,7 +154,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     mlDaa(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -170,7 +171,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     FAsearch(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -186,7 +187,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     SIMON(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -202,7 +203,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     COLUSSI(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -218,7 +219,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     MTKGalilGiancarloSearch(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -234,7 +235,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     MTKACA(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -251,7 +252,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     MTKNSN(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -269,7 +270,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     MTKBM2(txt,pat,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -305,7 +306,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};// ALG
     TBM(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -322,7 +323,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     AGSearch(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -341,7 +342,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     RCSearch(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -363,7 +364,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     ZT(pat,txt,output);
     // FOUND?
     XCTAssertTrue(output[0]!=0);
@@ -381,7 +382,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];// ALG
+    int output[256] = {0};;// ALG
     
     BOM(pat,txt,output); 
     // FOUND?
@@ -404,7 +405,7 @@
     // OUT
     //  char *output =0;// ALG
     //   BOM(pat,txt,output);
-    char* ch =   Railgun_Doublet(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
+    char* ch =   Railgun_Doublet(txt, pat, (int)strlen(txt),  (int)strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
     // FOUND?
     XCTAssertTrue(ch>0);
 }
@@ -458,18 +459,18 @@
 //+++++++++++++++++++++++++++
 /////////////////////////////
 //Galil-Seiferas algorithm
--(void)testGS{
-    // TEXT
-    char *txt = "xx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oo";
-    // PATTERN
-    char *pat = "fhg";
-    // OUT
-    int output[] = {0};// ALG
-    //   BOM(pat,txt,output);
-    //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
-    GS(txt, (int)strlen(txt), pat,  (int)strlen(pat), output);// FOUND?
-    XCTAssertTrue(output[0]>0);
-}
+//-(void)testGS{
+//    // TEXT
+//    char *txt = "xx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oo";
+//    // PATTERN
+//    char *pat = "fhg";
+//    // OUT
+//    int output[] = {0};// ALG
+//    //   BOM(pat,txt,output);
+//    //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
+//    GS(txt, (int)strlen(txt), pat,  (int)strlen(pat), output);// FOUND?
+//    XCTAssertTrue(output[0]>0);
+//}
 
 /////////////////////////////
 //+++++++++++++++++++++++++++
@@ -483,7 +484,7 @@
     // PATTERN
     char *pat = "ghfhgfhgfhgfh";
     // OUT
-    int output[] = {0};// ALG
+    int output[256] = {0};// ALG
     //   BOM(pat,txt,output);
     //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
     TW(pat,txt, output);
@@ -503,7 +504,7 @@
     // PATTERN
     char *pat = "ghfhgfhgfhgfh";
     // OUT
-    int  *output = 0;// ALG
+    int  output[256] = {0};// ALG
     //   BOM(pat,txt,output);
     //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
     SMOA(pat,txt, output);
@@ -518,19 +519,19 @@
 //+++++++++++++++++++++++++++
 /////////////////////////////
 ///Optimal Mismatch algorithm
--(void)testOM{
-    // TEXT
-    char *txt = "xx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oo";
-    // PATTERN
-    char *pat = "hgdgh";
-    // OUT
-    int output[] = {0};
-    //   BOM(pat,txt,output);
-    //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
-    OM(pat, txt,output);
-    // TW(txt, (int)strlen(txt), pat,  (int)strlen(pat), output);// FOUND?
-    XCTAssertTrue(output[0]>0);
-}
+//-(void)testOM{
+//    // TEXT
+//    char *txt = "xx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hghsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdoohgxx sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgfoohgxxhsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg sf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oohgxxgsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hggsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hgdsf65656 fgdgfdgfdggg ghfhgfhgfhgfh dgfg  d  jk hgdgh hg oo";
+//    // PATTERN
+//    char *pat = "hgdgh";
+//    // OUT
+//    int output[] = {0};
+//    //   BOM(pat,txt,output);
+//    //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
+//    OM(pat, txt,output);
+//    // TW(txt, (int)strlen(txt), pat,  (int)strlen(pat), output);// FOUND?
+//    XCTAssertTrue(output[0]>0);
+//}
 
 /////////////////////////////
 //+++++++++++++++++++++++++++
@@ -550,7 +551,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];
+    int output[256] = {0};
     //   BOM(pat,txt,output);
     //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
     SKIP(pat,txt, output);
@@ -571,7 +572,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];
+    int output[256] = {0};
     //   BOM(pat,txt,output);
     //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
     KMPSKIP(pat,txt, output);
@@ -590,7 +591,7 @@
     // PATTERN
     char *pat = "hgdgh";
     // OUT
-    int output[256];
+    int output[256] = {0};
     //   BOM(pat,txt,output);
     //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
     ALPHASKIP(pat,txt, output);
@@ -598,6 +599,25 @@
     XCTAssertTrue(output[0]>0);
 }
 
+
+/////////////////////////////
+//+++++++++++++++++++++++++++
+// Shift And algorithm
+//+++++++++++++++++++++++++++
+/////////////////////////////
+-(void)testShiftAnd{
+    // TEXT
+    char *txt = "xx sf  d  jk hgdgh hghsf  d  jk hgdgh hggsf  d  jk hgdgh hggsf  d  jk hgdgh hgdoohgxxdsf  d  jk hgdgh hghsf  d  jk hgdgh hg sf  d  jk hgdgh hgfsf  d  jk hgdgh hggoohgxxhsf  d  jk hgdgh hgfsf  d  jk hgdgh hggsf  d  jk hgdgh hgdsf  d  jk hgdgh hggoohgxxfsf  d  jk hgdgh hgfsf  d  jk hgdgh hgfsf  d  jk hgdgh hgdsf  d  jk hgdgh hgdoohgxxgsf  d  jk hgdgh hgfsf  d  jk hgdgh hg sf  d  jk hgdgh hggsf  d  jk hgdgh hgdoohgxx sf  d  jk hgdgh hg sf  d  jk hgdgh hghsf  d  jk hgdgh hgfsf  d  jk hgdgh hg oohgxxdsf  d  jk hgdgh hgfsf  d  jk hgdgh hggsf  d  jk hgdgh hghsf  d  jk hgdgh hgdoohgxxgsf  d  jk hgdgh hg sf  d  jk hgdgh hgdsf  d  jk hgdgh hgdsf  d  jk hgdgh hgfoohgxxdsf  d  jk hgdgh hgdsf  d  jk hgdgh hggsf  d  jk hgdgh hghsf  d  jk hgdgh hg oohgxxhsf  d  jk hgdgh hghsf  d  jk hgdgh hghsf  d  jk hgdgh hghsf  d  jk hgdgh hg oo";
+    // PATTERN
+    char *pat = "hgdgh";
+    // OUT
+    int output[256] = {0};
+    //   BOM(pat,txt,output);
+    //  GS(txt, pat, strlen(txt),  strlen(pat));//(haystack, needle,(uint32_t)(haystack), (uint32_t)(needle));
+    int s = ShiftAndsearch(pat,(int)strlen(pat),txt,(int)strlen(txt), output);
+    // TW(txt, (int)strlen(txt), pat,  (int)strlen(pat), output);// FOUND?
+    XCTAssertTrue(output[0]>0);
+}
 /////////////////////////////
 //+++++++++++++++++++++++++++
 ////////////////////////======++++++++++++++++++++++++++++////////////////////////======++++++++++++++++++++++++++++
@@ -620,7 +640,7 @@
 //    // OUT
 //    int m = (int)strlen(txt);
 //    int n = (int)strlen(pat);
-//    int output[256];// ALG
+//    int output[256] = {0};;// ALG
 //    BR(pat,n,txt,m);
 //    // FOUND?
 //    XCTAssertTrue(output[0]!=0);
@@ -638,7 +658,7 @@
 //    // PATTERN
 //    char *pat = "hgdgh";
 //    // OUT
-//    int output[256];// ALG
+//    int output[256] = {0};;// ALG
 //    TUNEDBM(pat,txt,output);
 //    // FOUND?
 //    XCTAssertTrue(output[0]!=0);
@@ -656,7 +676,7 @@
 //    // PATTERN
 //    char *pat = "hgdgh";
 //    // OUT
-//    int output[256];// ALG
+//    int output[256] = {0};;// ALG
 //    zalgo(pat,txt,output);
 //    // FOUND?
 //    XCTAssertTrue(output[0]!=0);
@@ -683,7 +703,7 @@
 //    int m = (int)strlen(txt);
 //    int n = (int)strlen(pat);
 //    // OUT
-//    int output[256];// ALG
+//    int output[256] = {0};;// ALG
 //    SMITH(txt,m,pat,n,output);
 //    // FOUND?
 //    XCTAssertTrue(output[0]!=0);
@@ -713,7 +733,7 @@
 //    int m = (int)strlen(txt);
 //    int n = (int)strlen(pat);
 //    // OUT
-//    int output[256];// ALG
+//    int output[256] = {0};;// ALG
 //    RF(pat,n,txt,m,output);
 //    // FOUND?
 //    XCTAssertTrue(output[0]!=0);

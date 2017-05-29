@@ -19,7 +19,7 @@
 
 #import "MTKTwoWay.h"
 #import "includeme.h"
-#define XSIZE   20
+
 #define ASIZE   256
 @implementation MTKTwoWay
 /* Computing of the maximal suffix for <= */

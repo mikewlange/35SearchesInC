@@ -44,7 +44,7 @@
 
 
 @implementation MTKShiftOr
-#define XSIZE   20
+
 #define ASIZE   256
 #if defined(__linux__)
 int preSo(char *x, int m, unsigned int S[]) {
