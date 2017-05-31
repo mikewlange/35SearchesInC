@@ -69,11 +69,8 @@ int skattempt(char *y, char *x, int m, int start, int wall) {
     return(k);
 }
 
-
-void KMPSKIP(char *x,char *y, int* output) {
+void KMPSKIP(char *x,size_t m, char *y,size_t n, int* output) {
     
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
     int i, j, k, kmpStart, per, start, wall;
     int kmpNext[XSIZE], list[XSIZE], mpNext[XSIZE],
     z[ASIZE];

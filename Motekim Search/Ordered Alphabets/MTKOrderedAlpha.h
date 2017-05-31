@@ -13,4 +13,4 @@
 @interface MTKOrderedAlpha : NSObject
 
 @end
-void SMOA(char *x,char *y, int*output);
+void SMOASearch(char *x, int m,char *y, int n, int*output);

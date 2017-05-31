@@ -45,7 +45,7 @@ char *my_strlcpy(char *dst, const char *src, size_t n)
 void computeLPSArray(char *pat, int M, int *lps);
 
 // Prints occurrences of txt[] in pat[]
-void MTKKMPSearch(char *pat, char *txt, int *outt)
+void MTKKMPSearch(char *pat, int m, char *txt, int n, int* outt)
 {
     //int *ret[256] ;//= NULL;
 

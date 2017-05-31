@@ -62,6 +62,10 @@
 		7C01AFBB1EDC00B900C10562 /* MTKZhuTakaoka.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF8B1EDC00B900C10562 /* MTKZhuTakaoka.m */; };
 		7C01AFBC1EDC00B900C10562 /* util.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AF8E1EDC00B900C10562 /* util.m */; };
 		7C01AFC51EDC3BE400C10562 /* MTKShiftAnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AFC41EDC3BE400C10562 /* MTKShiftAnd.m */; };
+		7C01AFD11EDC465500C10562 /* MTKFJS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AFD01EDC465500C10562 /* MTKFJS.m */; };
+		7C01AFD51EDC748400C10562 /* MTKHASHq.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AFD41EDC748400C10562 /* MTKHASHq.m */; };
+		7C01AFD91EDC77FE00C10562 /* bmh-sbndm.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01AFD81EDC77FE00C10562 /* bmh-sbndm.m */; };
+		7C01B0CC1EDE4A8D00C10562 /* Extended-BOM.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C01B0CB1EDE4A8D00C10562 /* Extended-BOM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +196,14 @@
 		7C01AFCA1EDC3C2A00C10562 /* log2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log2.h; sourceTree = "<group>"; };
 		7C01AFCC1EDC3C2A00C10562 /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
 		7C01AFCD1EDC3C2A00C10562 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		7C01AFCF1EDC465500C10562 /* MTKFJS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTKFJS.h; path = "fastest/ Thathoo-Virmani-Sai-Balakrishnan-Sekar/MTKFJS.h"; sourceTree = "<group>"; };
+		7C01AFD01EDC465500C10562 /* MTKFJS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTKFJS.m; path = "fastest/ Thathoo-Virmani-Sai-Balakrishnan-Sekar/MTKFJS.m"; sourceTree = "<group>"; };
+		7C01AFD31EDC748400C10562 /* MTKHASHq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKHASHq.h; sourceTree = "<group>"; };
+		7C01AFD41EDC748400C10562 /* MTKHASHq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKHASHq.m; sourceTree = "<group>"; };
+		7C01AFD71EDC77FE00C10562 /* bmh-sbndm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "bmh-sbndm.h"; path = "fastest/bmh-sbndm/bmh-sbndm.h"; sourceTree = "<group>"; };
+		7C01AFD81EDC77FE00C10562 /* bmh-sbndm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "bmh-sbndm.m"; path = "fastest/bmh-sbndm/bmh-sbndm.m"; sourceTree = "<group>"; };
+		7C01B0CA1EDE4A8C00C10562 /* Extended-BOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Extended-BOM.h"; path = "Extended-BOM/Extended-BOM.h"; sourceTree = "<group>"; };
+		7C01B0CB1EDE4A8D00C10562 /* Extended-BOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Extended-BOM.m"; path = "Extended-BOM/Extended-BOM.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +255,7 @@
 		7C01AE141EDBF1F600C10562 /* Motekim Search */ = {
 			isa = PBXGroup;
 			children = (
+				7C01B0C91EDE4A7A00C10562 /* Extended-BOM */,
 				7C01AFC11EDC3B8A00C10562 /* Known Fastest */,
 				7C01AFBD1EDC14ED00C10562 /* BMH-BNDM */,
 				7C01AF151EDC00B900C10562 /* includeme.h */,
@@ -654,6 +667,9 @@
 		7C01AFC11EDC3B8A00C10562 /* Known Fastest */ = {
 			isa = PBXGroup;
 			children = (
+				7C01AFD61EDC77D600C10562 /* horspool with bndm test */,
+				7C01AFD21EDC746800C10562 /* HASHq */,
+				7C01AFCE1EDC45F500C10562 /* Franek-Jennings-Smyth */,
 				7C01AFC21EDC3B9D00C10562 /* ShiftAnd */,
 			);
 			name = "Known Fastest";
@@ -677,6 +693,42 @@
 				7C01AFCD1EDC3C2A00C10562 /* timer.h */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		7C01AFCE1EDC45F500C10562 /* Franek-Jennings-Smyth */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AFCF1EDC465500C10562 /* MTKFJS.h */,
+				7C01AFD01EDC465500C10562 /* MTKFJS.m */,
+			);
+			name = "Franek-Jennings-Smyth";
+			sourceTree = "<group>";
+		};
+		7C01AFD21EDC746800C10562 /* HASHq */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AFD31EDC748400C10562 /* MTKHASHq.h */,
+				7C01AFD41EDC748400C10562 /* MTKHASHq.m */,
+			);
+			name = HASHq;
+			sourceTree = "<group>";
+		};
+		7C01AFD61EDC77D600C10562 /* horspool with bndm test */ = {
+			isa = PBXGroup;
+			children = (
+				7C01AFD71EDC77FE00C10562 /* bmh-sbndm.h */,
+				7C01AFD81EDC77FE00C10562 /* bmh-sbndm.m */,
+			);
+			name = "horspool with bndm test";
+			sourceTree = "<group>";
+		};
+		7C01B0C91EDE4A7A00C10562 /* Extended-BOM */ = {
+			isa = PBXGroup;
+			children = (
+				7C01B0CA1EDE4A8C00C10562 /* Extended-BOM.h */,
+				7C01B0CB1EDE4A8D00C10562 /* Extended-BOM.m */,
+			);
+			name = "Extended-BOM";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -830,6 +882,7 @@
 				7C01AFBC1EDC00B900C10562 /* util.m in Sources */,
 				7C01AFAE1EDC00B900C10562 /* MTKOptimalMismatch.m in Sources */,
 				7C01AFAF1EDC00B900C10562 /* MTKOrderedAlpha.m in Sources */,
+				7C01AFD91EDC77FE00C10562 /* bmh-sbndm.m in Sources */,
 				7C01AFAA1EDC00B900C10562 /* MTKKarpRabin.m in Sources */,
 				7C01AF9F1EDC00B900C10562 /* MTKAlphaSkip.m in Sources */,
 				7C01AF951EDC00B900C10562 /* MTKNsn.m in Sources */,
@@ -843,7 +896,9 @@
 				7C01AFB11EDC00B900C10562 /* MTKRailgun.m in Sources */,
 				7C01AFB41EDC00B900C10562 /* MTKReverseFactor.m in Sources */,
 				7C01AFB91EDC00B900C10562 /* MTKTwoWay.m in Sources */,
+				7C01AFD11EDC465500C10562 /* MTKFJS.m in Sources */,
 				7C01AF901EDC00B900C10562 /* MTKBNDMatching.m in Sources */,
+				7C01B0CC1EDE4A8D00C10562 /* Extended-BOM.m in Sources */,
 				7C01AFA51EDC00B900C10562 /* MTKbruteforce.m in Sources */,
 				7C01AF981EDC00B900C10562 /* MTKTurboReverseFactor.m in Sources */,
 				7C01AFBA1EDC00B900C10562 /* MTKSmith.m in Sources */,
@@ -856,6 +911,7 @@
 				7C01AFAD1EDC00B900C10562 /* MTKMorrisPratt.m in Sources */,
 				7C01AFC51EDC3BE400C10562 /* MTKShiftAnd.m in Sources */,
 				7C01AF941EDC00B900C10562 /* MTKMaximalShift.m in Sources */,
+				7C01AFD51EDC748400C10562 /* MTKHASHq.m in Sources */,
 				7C01AFB71EDC00B900C10562 /* MTKSkipSearch.m in Sources */,
 				7C01AFA81EDC00B900C10562 /* MTKGalilGiancarlo.m in Sources */,
 				7C01AF971EDC00B900C10562 /* MTKTunedBoyerMoore.m in Sources */,

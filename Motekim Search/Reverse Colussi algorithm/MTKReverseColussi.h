@@ -11,4 +11,4 @@
 @interface MTKReverseColussi : NSObject
 
 @end
-void RCSearch(char *x, char *y, int *output);
+void ReverseColussiSearch(char *x, char *y, int *output);

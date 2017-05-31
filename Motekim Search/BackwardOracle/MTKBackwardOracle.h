@@ -11,4 +11,4 @@
 @interface MTKBackwardOracle : NSObject
 
 @end
-void BOM(char *x,char *y, int*output);
+int boma(unsigned char *x, int m, unsigned char *y, int n, int*rcOut) ;

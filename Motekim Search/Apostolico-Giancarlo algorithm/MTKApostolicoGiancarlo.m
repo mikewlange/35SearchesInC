@@ -27,12 +27,11 @@
 
 #define ASIZE   256
 
-void AGSearch(char *x, char *y, int*output) {
+void AGSearch(char *x,int m, char *y,int n, int*output) {
     int i, j, k, s, shift,
     bmGs[XSIZE], skip[XSIZE], suff[XSIZE], bmBc[ASIZE];
     
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
+
     int p = 0;
     /* Preprocessing */
     preBmGsAG(x, m, bmGs);

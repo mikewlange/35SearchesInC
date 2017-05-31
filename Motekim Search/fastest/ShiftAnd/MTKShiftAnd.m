@@ -11,6 +11,31 @@
 #import "define.h"
 @implementation MTKShiftAnd
 
+
+/*
+ * SMART: string matching algorithms research tool.
+ * Copyright (C) 2012  Simone Faro and Thierry Lecroq
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ * contact the authors at: faro@dmi.unict.it, thierry.lecroq@univ-rouen.fr
+ * download the tool at: http://www.dmi.unict.it/~faro/smart/
+ *
+ * This is an implementation of the Shift And algorithm
+ * in R. Baeza-Yates and G. H. Gonnet.
+ * A new approach to text searching. Commun. ACM, vol.35, n.10, pp.74--82, ACM, New York, NY, USA, (1992).
+ */
+
+
 void preSA(unsigned char *x, int m, unsigned int S[]) {
     unsigned int j, lim;
     int i;
@@ -20,12 +45,13 @@ void preSA(unsigned char *x, int m, unsigned int S[]) {
     }
 }
 
-int ShiftAndsearch(unsigned char *x, int m, unsigned char *y, int n, int*output) {
+int searchSHIFTAND(unsigned char *x, int m, unsigned char *y, int n, int* RCout) {
     unsigned int lim, D;
     unsigned int S[SIGMA], F;
     int j, count;
+    int RCcount=0;
     if (m > WORD) return search_large(x,m,y,n);
-    int xx = 0;
+    
     /* Preprocessing */
     preSA(x, m, S);
     F = 1<<(m-1);
@@ -35,9 +61,9 @@ int ShiftAndsearch(unsigned char *x, int m, unsigned char *y, int n, int*output)
     for (D = 0, j = 0; j < n; ++j) {
         D = ((D<<1) | 1) & S[y[j]];
         if (D & F){
-            output[xx] =(j - m + 1);
-            xx++;
-            OUTPUT(j - m + 1);
+            RCout[RCcount]=(j - m + 1);
+            RCcount++;
+            outp(j - m + 1);
         }
     }
     return count;
@@ -69,12 +95,12 @@ int search_large(unsigned char *x, int m, unsigned char *y, int n) {
             k = 0;
             h = j-m+1;
             while(k<p_len && x[k]==y[h+k]) k++;
-            if (k==p_len) OUTPUT(j - m + 1);
+            if(k==p_len){
+              outp(j - m + 1);
+            }
         }
     } 
     return count;
 } 
-
-
 
 @end

@@ -10,4 +10,4 @@
 
 @interface MTKKnuthMorrisPratt : NSObject
 @end
-void MTKKMPSearch(char *pat, char *txt, int *outt);
+void MTKKMPSearch(char *pat, int m, char *txt, int n, int* outt);

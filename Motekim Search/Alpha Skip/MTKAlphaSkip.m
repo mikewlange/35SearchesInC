@@ -67,11 +67,10 @@ int asaddNode(Graph trie, int art, int node, char c) {
     return(childNode);
 }
 
-
-void ALPHASKIP(char *x, char *y, int* output) {
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
-    int p = 0;
+void ALPHASKIP(char *x,int m, char *y,int n, int* output) {
+   // int m = (int)strlen(x);
+   // int n = (int)strlen(y);
+    int intRc = 0;
     int a = 101;
     int b, i, j, k, logM, temp, shift, size, pos;
     int art, childNode, node, root, lastNode;
@@ -139,8 +138,9 @@ void ALPHASKIP(char *x, char *y, int* output) {
                 b = j - current->element;
                 if (x[0] == y[b] &&
                     memcmp(x + 1, y + b + 1, m - 1) == 0){
-                    output[p] = b;
-                    p++;
+                    outp(b);
+                    output[intRc] = b;
+                    intRc++;
                     //OUTPUT(b);
                 }
             }

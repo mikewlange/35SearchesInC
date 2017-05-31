@@ -11,4 +11,4 @@
 @interface MTKTurboBM : NSObject
 
 @end
-void TBM(char *x, char *y, int *output);
+void TurboBoyerMooreSearch(char *x, int m,char *y,int n, int *output);

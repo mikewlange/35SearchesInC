@@ -11,4 +11,4 @@
 @interface MTKApostolicoCrochemore : NSObject
 
 @end
-void MTKACA(char *x, char *y, int *output);
+void ApostolicoCrochemoreSearch(char *x,int m, char *y, int n,int *output);

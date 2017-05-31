@@ -11,4 +11,5 @@
 @interface MTKAlphaSkip : NSObject
 
 @end
-void ALPHASKIP(char *x, char *y, int* output);
+//void ALPHASKIP(char *x, char *y, int* output);
+void ALPHASKIP(char *x,int m, char *y,int n, int* output);

@@ -11,4 +11,4 @@
 @interface MTKSkipSearch : NSObject
 
 @end
-void SKIP(char *x,char *y, int*output);
+void SKIPSearch(char *x,int m, char *y,int n, int* output) ;

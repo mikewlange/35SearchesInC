@@ -43,50 +43,6 @@
 //
 //The searching phase can be performed in O(n) time if the automaton is stored in a direct access table, in O(nlog(sigma)) otherwise.
 
-
-
-// V1
-//http://www-igm.univ-mlv.fr/~lecroq/string/node4.html#SECTION0040
-//
-
-#define ASIZE   256
-void preAut(char *x, int m, Graph aut) {
-    int i, state, target, oldTarget;
-    
-    for (state = getInitial(aut), i = 0; i < m; ++i) {
-        oldTarget = getTarget(aut, state, x[i]);
-        target = newVertex(aut);
-        setTarget(aut, state, x[i], target);
-        copyVertex(aut, target, oldTarget);
-        state = target;
-    }
-    setTerminal(aut, state);
-}
-
-//int out[];
-
-void DFAA(char *x,char *y,int *output) {
-    int pOut;
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
-    
-    int j, state;
-    Graph aut;
-    /* Preprocessing */
-    aut = newAutomaton(m + 1, (m + 1)*ASIZE);
-    preAut(x, m, aut);
-    pOut=0;
-    /* Searching */
-    for (state = getInitial(aut), j = 0; j < n; ++j) {
-        state = getTarget(aut, state, y[j]);
-        if (isTerminal(aut, state)){
-            output[pOut] = (j - m + 1);pOut++;
-               printf ("\n dfaaSearch Deterministic Finite Automaton algorithm Pattern found at index %d",(j - m + 1));
-        }
-    }
-}
-
-
 // v2 - 1 looks busted
 
 #define NO_OF_CHARS 256
@@ -132,10 +88,10 @@ void computeTF(char *pat, int M, int TF[][NO_OF_CHARS])
 }
 
 /* Prints all occurrences of pat in txt */
-void mlDaa(char *pat, char *txt, int *output)
+void MTKDFAAsearch(char *pat, int M, char *txt,int N, int *output)
 {
-    int M = (int)strlen(pat);
-    int N = (int)strlen(txt);
+
+    
     int loop=0;
     int TF[M+1][NO_OF_CHARS];
     
@@ -149,7 +105,7 @@ void mlDaa(char *pat, char *txt, int *output)
     if (state == M)
         {
         output[loop]=i-M+1;loop++;
-         printf ("\n mlDaa Deterministic Finite Automaton algorithm Pattern found at index %d", i-M+1);
+        outp(i-M+1);
         }
     }
 }

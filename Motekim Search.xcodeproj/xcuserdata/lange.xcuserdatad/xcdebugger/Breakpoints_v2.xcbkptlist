@@ -2,4 +2,1468 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim Search/fastest/bmh-sbndm/bmh-sbndm.m"
+            timestampString = "517768627.568378"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "@implementation bmh_sbndm"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim Search/fastest/bmh-sbndm/bmh-sbndm.m"
+            timestampString = "517768627.568378"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "@implementation bmh_sbndm"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517884884.096935"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "-testMTKMorrisPratt"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKMorrisPratt]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.15825"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKMorrisPratt]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.160202"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKMorrisPratt]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.162218"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKMorrisPratt]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.164199"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "707"
+            endingLineNumber = "707"
+            landmarkName = "-testBWO"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testBWO]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.166901"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "707"
+                  endingLineNumber = "707"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testBWO]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.168764"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "707"
+                  endingLineNumber = "707"
+                  offsetFromSymbolStart = "614">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testBWO]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.170412"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "707"
+                  endingLineNumber = "707"
+                  offsetFromSymbolStart = "697">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testBWO]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.172131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "707"
+                  endingLineNumber = "707"
+                  offsetFromSymbolStart = "834">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517888761.048855"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "-testDFAAsearch"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testDFAAsearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.174226"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testDFAAsearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.176705"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testDFAAsearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.179641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testDFAAsearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.184537"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "-testFiniteAutomata"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testFiniteAutomata]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.189715"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testFiniteAutomata]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.194761"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testFiniteAutomata]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.19908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testFiniteAutomata]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.203175"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "-testSIMON"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testSIMON]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.20778"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testSIMON]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.210749"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testSIMON]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.214205"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testSIMON]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.21751"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
+            landmarkName = "-testCOLUSSI"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testCOLUSSI]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.222399"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testCOLUSSI]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.225719"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testCOLUSSI]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.228357"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testCOLUSSI]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.231813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
+            landmarkName = "-testMTKGalilGiancarloSearch"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKGalilGiancarloSearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.235536"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "256"
+                  endingLineNumber = "256"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKGalilGiancarloSearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.237286"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "256"
+                  endingLineNumber = "256"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKGalilGiancarloSearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.238993"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "256"
+                  endingLineNumber = "256"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKGalilGiancarloSearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.240844"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "256"
+                  endingLineNumber = "256"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "-testApostolicoCrochemore"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testApostolicoCrochemore]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.243401"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testApostolicoCrochemore]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.245156"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testApostolicoCrochemore]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.247086"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testApostolicoCrochemore]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.250038"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "276"
+                  endingLineNumber = "276"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
+            landmarkName = "-testBoyerMoore"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testBoyerMoore]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.252365"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "293"
+                  endingLineNumber = "293"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testBoyerMoore]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.254378"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "293"
+                  endingLineNumber = "293"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testBoyerMoore]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.255915"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "293"
+                  endingLineNumber = "293"
+                  offsetFromSymbolStart = "639">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testBoyerMoore]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.257587"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "293"
+                  endingLineNumber = "293"
+                  offsetFromSymbolStart = "776">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "314"
+            endingLineNumber = "314"
+            landmarkName = "-testTurboBM"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testTurboBM]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.259757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "314"
+                  endingLineNumber = "314"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testTurboBM]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.261221"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "314"
+                  endingLineNumber = "314"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testTurboBM]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.26268"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "314"
+                  endingLineNumber = "314"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testTurboBM]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.264097"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "314"
+                  endingLineNumber = "314"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "334"
+            endingLineNumber = "334"
+            landmarkName = "-testAG"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testAG]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.266377"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testAG]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.267941"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testAG]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.269709"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testAG]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.271454"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
+            landmarkName = "-testReverseColussi"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testReverseColussi]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.273598"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "354"
+                  endingLineNumber = "354"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testReverseColussi]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.275127"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "354"
+                  endingLineNumber = "354"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testReverseColussi]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.276987"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "354"
+                  endingLineNumber = "354"
+                  offsetFromSymbolStart = "639">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testReverseColussi]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.279104"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "354"
+                  endingLineNumber = "354"
+                  offsetFromSymbolStart = "776">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "498"
+            endingLineNumber = "498"
+            landmarkName = "-testShiftAnd"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testShiftAnd]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.282793"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "498"
+                  endingLineNumber = "498"
+                  offsetFromSymbolStart = "186">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testShiftAnd]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.285468"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "498"
+                  endingLineNumber = "498"
+                  offsetFromSymbolStart = "614">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testShiftAnd]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.288136"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "498"
+                  endingLineNumber = "498"
+                  offsetFromSymbolStart = "697">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testShiftAnd]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.290827"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "498"
+                  endingLineNumber = "498"
+                  offsetFromSymbolStart = "834">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim Search/fastest/ Thathoo-Virmani-Sai-Balakrishnan-Sekar/MTKFJS.m"
+            timestampString = "517888437.917123"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "FJS()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517888570.180193"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "-testMTKKnuthMorrisPratt"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKKnuthMorrisPratt]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.295054"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKKnuthMorrisPratt]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.29886"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKKnuthMorrisPratt]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.303701"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKKnuthMorrisPratt]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.307104"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517888679.741879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "-testMTKKarpRabin"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKKarpRabin]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.31186"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKKarpRabin]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.315367"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKKarpRabin]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.318113"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "655">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testMTKKarpRabin]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.321511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "792">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "419"
+            endingLineNumber = "419"
+            landmarkName = "-testTWASearch"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testTWASearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.326147"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "419"
+                  endingLineNumber = "419"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testTWASearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.329372"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "419"
+                  endingLineNumber = "419"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testTWASearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.332482"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "419"
+                  endingLineNumber = "419"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testTWASearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.336117"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "419"
+                  endingLineNumber = "419"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "399"
+            endingLineNumber = "399"
+            landmarkName = "-testGS"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testGS]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.342593"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "399"
+                  endingLineNumber = "399"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testGS]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.346515"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "399"
+                  endingLineNumber = "399"
+                  offsetFromSymbolStart = "519">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testGS]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.350726"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "399"
+                  endingLineNumber = "399"
+                  offsetFromSymbolStart = "573">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testGS]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.353581"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "399"
+                  endingLineNumber = "399"
+                  offsetFromSymbolStart = "695">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Motekim SearchTests/Motekim_SearchTests.m"
+            timestampString = "517892112.499576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "380"
+            endingLineNumber = "380"
+            landmarkName = "-testZhuTakaokaSearch"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testZhuTakaokaSearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.357407"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "380"
+                  endingLineNumber = "380"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testZhuTakaokaSearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.360333"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "380"
+                  endingLineNumber = "380"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testZhuTakaokaSearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.362137"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "380"
+                  endingLineNumber = "380"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MotekimSearchAlgosTests testZhuTakaokaSearch]"
+                  moduleName = "Motekim SearchTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lange/GitHub%20Dev%20Projects/Motekim%20Search/Motekim%20SearchTests/Motekim_SearchTests.m"
+                  timestampString = "517892113.364792"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "380"
+                  endingLineNumber = "380"
+                  offsetFromSymbolStart = "828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

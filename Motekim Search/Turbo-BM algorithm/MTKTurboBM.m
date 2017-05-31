@@ -13,10 +13,9 @@
 
 
 #define ASIZE   256
-void TBM(char *x, char *y, int *output) {
+void TurboBoyerMooreSearch(char *x, int m,char *y,int n, int *output) {
     
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
+
     int p = 0;
     
     int bcShift, i, j, shift, u, v, turboShift,

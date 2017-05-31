@@ -11,5 +11,4 @@
 @interface MTKSimonAlgo : NSObject
 
 @end
-
-void SIMON(char *x, char *y, int* output);
+void SIMON(char *x, int m, char *y, int n, int* output);

@@ -102,10 +102,10 @@ void preRc(char *x, int m, int h[],
 }
 
 
-void RCSearch(char *x, char *y, int *output) {
+void ReverseColussiSearch(char *x, char *y, int *output) {
     int m = (int)strlen(x);
     int n = (int)strlen(y);
-    int p = 0;
+    int pRC = 0;
     int i, j, s, rcBc[ASIZE][XSIZE], rcGs[XSIZE], h[XSIZE];
     
     /* Preprocessing */
@@ -120,11 +120,12 @@ void RCSearch(char *x, char *y, int *output) {
             j += s;
         }
         for (i = 1; i < m && x[h[i]] == y[j + h[i]]; ++i);
-        if (i >= m)
-        output[p] = j;
-        p++;
+        if (i >= m){
+            output[pRC] = j;
+            pRC++;}
         s = rcGs[i];
         j += s;
+        
     }
 }
 

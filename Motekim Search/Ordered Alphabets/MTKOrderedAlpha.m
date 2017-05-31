@@ -53,10 +53,9 @@ void nextMaximalSuffix(char *x, int m,
 
 
 /* String matching on ordered alphabets algorithm. */
-void SMOA(char *x,char *y, int*output) {
+void SMOASearch(char *x, int m,char *y, int n, int*output) {
     
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
+
     int internalLoop = 0;
     
     int i, ip, j, jp, k, p;

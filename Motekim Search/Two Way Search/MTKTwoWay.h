@@ -11,4 +11,4 @@
 @interface MTKTwoWay : NSObject
 
 @end
-void TW(char *x, char *y, int *output);
+void TWASearch(char *x,int m, char *y,int n, int *output);

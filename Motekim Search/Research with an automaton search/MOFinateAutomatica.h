@@ -11,4 +11,4 @@
 @interface MOFinateAutomatica : NSObject
 
 @end
-void FAsearch(char *pat, char *txt,int *x); 
+void FiniteAutomataSearch(char *pat,int M, char *txt,int N,int *rcOUt );

@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface MTKKarpRabin : NSObject
-void KR(char *x, char *y, int *outLst);
-void KRsearch(char pat[], char txt[], int q, int *outLst);
+//void KR(char *x, char *y, int *outLst);
+void MTKKarpRabinSearch(char pat[], char txt[], int q, int *outLst);
 @end

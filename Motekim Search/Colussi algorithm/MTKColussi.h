@@ -11,5 +11,5 @@
 @interface MTKColussi : NSObject
 
 @end
-void COLUSSI(char *x, char *y, int *output);
+void COLUSSI(char *x, int m, char *y,int n, int *output);
 int preColussi(char *x, int m, int h[], int next[], int shift[]);

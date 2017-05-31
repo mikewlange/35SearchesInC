@@ -11,4 +11,5 @@
 @interface MTKMorrisPratt : NSObject
 
 @end
-void MTKMorrisPrattSearch(char *x, char *y, int* output);
+//void MTKMorrisPrattSearch(char *x, char *y, int* output);
+void MTKMorrisPrattSearch(char *x, int m, char *y, int n, int* output) ;

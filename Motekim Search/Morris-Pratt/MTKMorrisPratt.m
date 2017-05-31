@@ -54,11 +54,9 @@ void preMp(char *x, int m, int mpNext[]) {
 }
 
 
-void MTKMorrisPrattSearch(char *x, char *y, int* output) {
-    int p;
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
-    p=0;
+void MTKMorrisPrattSearch(char *x, int m, char *y, int n, int* output) {
+    int inLoop;
+    inLoop=0;
     int i, j, mpNext[n];
     
     /* Preprocessing */
@@ -72,8 +70,8 @@ void MTKMorrisPrattSearch(char *x, char *y, int* output) {
         i++;
         j++;
         if (i >= m) {
-            output[p]=(j-i);
-            p++;
+            output[inLoop]=(j-i);
+            inLoop++;
             i = mpNext[i];
         }
     }

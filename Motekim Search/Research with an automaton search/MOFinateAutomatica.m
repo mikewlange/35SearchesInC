@@ -67,11 +67,10 @@ void computeTransFun(char *pat, int M, int TF[][NO_OF_CHARS])
 }
 
 /* Prints all occurrences of pat in txt */
-void FAsearch(char *pat, char *txt,int *x)
+void FiniteAutomataSearch(char *pat,int M, char *txt,int N,int *rcOUt )
 {
-    int M = (int)strlen(pat);
-    int N = (int)strlen(txt);
-    int y = 0;
+
+    int RCoutCt = 0;
     int TF[M+1][NO_OF_CHARS];
     
     computeTransFun(pat, M, TF);
@@ -83,8 +82,8 @@ void FAsearch(char *pat, char *txt,int *x)
     j = TF[j][txt[i]];
     if (j == M)
         {
-        x[y] = i-M+1;
-        y++;
+        rcOUt[RCoutCt] = i-M+1;
+        RCoutCt++;
         printf ("\n pattern found at index %d", i-M+1);
         }
     }

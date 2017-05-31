@@ -345,7 +345,7 @@ void badCharHeuristic(char *str, int size, int badchar[NO_OF_CHARS])
         badchar[(int) str[i]] = i;
 }
 
-void MTKBM2(char *txt, char *pat, int * output)
+void MTKBoyerMoore2(char *txt, char *pat, int * output)
 {
     int m = (int)strlen(pat);
     int n = (int)strlen(txt);

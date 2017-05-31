@@ -11,4 +11,4 @@
 @interface MTKApostolicoGiancarlo : NSObject
 
 @end
-void AGSearch(char *x, char *y, int*output);
+void AGSearch(char *x,int m, char *y,int n, int*output);

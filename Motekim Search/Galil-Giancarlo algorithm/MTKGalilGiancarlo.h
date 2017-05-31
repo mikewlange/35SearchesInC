@@ -11,4 +11,4 @@
 @interface MTKGalilGiancarlo : NSObject
 
 @end
-void MTKGalilGiancarloSearch(char *x, char *y, int *output);
+void MTKGalilGiancarloSearch(char *x, int m, char *y,int n, int *output);

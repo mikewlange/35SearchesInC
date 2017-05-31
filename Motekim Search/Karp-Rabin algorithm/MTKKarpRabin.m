@@ -63,7 +63,7 @@
  q -> A prime number
  */
 int outloop;
-void KRsearch(char pat[], char txt[], int q, int *outLst)
+void MTKKarpRabinSearch(char pat[], char txt[], int q, int *outLst)
 {
     int M = (int)strlen(pat);
     int N = (int)strlen(txt);

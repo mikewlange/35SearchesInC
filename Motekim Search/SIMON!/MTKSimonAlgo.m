@@ -27,7 +27,7 @@
 #import "includeme.h"
 @implementation MTKSimonAlgo
 
-int getTransition(char *x, int m, int p, List L[],
+int getTransitionSIMON(char *x, int m, int p, List L[],
                   char c) {
     List cell;
     
@@ -47,7 +47,7 @@ int getTransition(char *x, int m, int p, List L[],
 }
 
 
-void setTransition(int p, int q, List L[]) {
+void setTransitionSIMON(int p, int q, List L[]) {
     List cell;
     
     cell = (List)malloc(sizeof(struct _cell));
@@ -72,13 +72,13 @@ int preSimon(char *x, int m, List L[]) {
         if (x[i] == x[k + 1])
         ell = k + 1;
         else
-        setTransition(i - 1, k + 1, L);
+        setTransitionSIMON(i - 1, k + 1, L);
         while (cell != NULL) {
             k = cell->element;
             if (x[i] == x[k])
             ell = k;
             else
-            setTransition(i - 1, k, L);
+            setTransitionSIMON(i - 1, k, L);
             cell = cell->next;
         }
     }
@@ -86,10 +86,8 @@ int preSimon(char *x, int m, List L[]) {
 }
 
 
-void SIMON(char *x, char *y, int* output) {
-    
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
+void SIMON(char *x, int m, char *y, int n, int* output) {
+
     int j, ell, state;
     List L[m];
     int q  = 0;
@@ -98,7 +96,7 @@ void SIMON(char *x, char *y, int* output) {
     
     /* Searching */
     for (state = -1, j = 0; j < n; ++j) {
-        state = getTransition(x, m, state, L, y[j]);
+        state = getTransitionSIMON(x, m, state, L, y[j]);
         if (state >= m - 1) {
             output[q]= (j - m + 1);
              printf("SIMON Found pattern at index %d \n",(j - m + 1));

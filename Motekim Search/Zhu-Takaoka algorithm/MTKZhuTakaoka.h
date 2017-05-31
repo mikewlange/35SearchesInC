@@ -11,4 +11,4 @@
 @interface MTKZhuTakaoka : NSObject
 
 @end
-void ZT(char *x, char *y, int *output);
+void ZhuTakaokaSearch(char *x,int m, char *y, int n, int *output);

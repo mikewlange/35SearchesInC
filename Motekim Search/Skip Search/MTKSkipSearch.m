@@ -13,14 +13,12 @@
 
 #define ASIZE   256//
 
-void SKIP(char *x,char *y, int*output) {
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
-    int i, j;
+void SKIPSearch(char *x,int m, char *y,int n, int* output) {
+    unsigned long j;    int i;
     List ptr, z[ASIZE];
     int loopCount=0;
     /* Preprocessing */
-    memset(z, NULL, ASIZE*sizeof(List));
+    memset(z, 0, ASIZE*sizeof(List));
     for (i = 0; i < m; ++i) {
         ptr = (List)malloc(sizeof(struct _cell));
         if (ptr == NULL)

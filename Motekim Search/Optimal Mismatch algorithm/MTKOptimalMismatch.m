@@ -21,7 +21,7 @@
 #import "includeme.h"
 @implementation MTKOptimalMismatch
 
-#define XSIZE   20
+
 #define ASIZE   256
 
 typedef struct patternScanOrder {

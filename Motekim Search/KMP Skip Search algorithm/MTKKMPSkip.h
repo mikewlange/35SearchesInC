@@ -11,5 +11,6 @@
 @interface MTKKMPSkip : NSObject
 
 @end
-void KMPSKIP(char *x,char *y, int* output);
+//void KMPSKIP(char *x,char *y, int* output);
  
+void KMPSKIP(char *x,size_t m, char *y,size_t n, int* output);

@@ -84,12 +84,9 @@ int preGalilGiancarlo(char *x, int m, int h[], int next[], int shift[]) {
     
     return (nd);
 }
-void MTKGalilGiancarloSearch(char *x, char *y, int *output) {
+void MTKGalilGiancarloSearch(char *x, int m, char *y,int n, int *output) {
     
     int p = 0;
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
-    
     int i, j, k, ell, last, nd;
     int h[XSIZE], next[XSIZE], shift[XSIZE];
     char heavy;

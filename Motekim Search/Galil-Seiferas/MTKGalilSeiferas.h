@@ -29,4 +29,5 @@
 @interface MTKGalilSeiferas : NSObject
 
 @end
-void GS(char *argX, int argM, char *argY, int argN, int* output);
+
+void GSGSSearch(char *argX, int argM, char *argY, int argN, int* rcQ);

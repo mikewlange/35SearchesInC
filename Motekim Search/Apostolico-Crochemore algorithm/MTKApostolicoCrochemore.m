@@ -43,10 +43,9 @@ void preKmp(char *x, int m, int kmpNext[]) {
     }
 }
 
-void MTKACA(char *x, char *y, int *output) {
+void ApostolicoCrochemoreSearch(char *x,int m, char *y, int n,int *output) {
     
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
+
     int q = 0;
     int i, j, k, ell, kmpNext[XSIZE];
     

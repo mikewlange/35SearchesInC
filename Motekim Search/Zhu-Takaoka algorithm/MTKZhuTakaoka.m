@@ -71,11 +71,10 @@ void ztsuffixes(char *x, int m, int *suff) {
         }
     }
 }
-void ZT(char *x, char *y, int *output) {
+void ZhuTakaokaSearch(char *x,int m, char *y, int n, int *output) {
     int i, j, ztBc[ASIZE][ASIZE], bmGs[XSIZE];
     
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
+
     int p = 0;
     
     /* Preprocessing */

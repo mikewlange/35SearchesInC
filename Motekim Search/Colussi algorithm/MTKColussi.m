@@ -106,10 +106,9 @@ int preColussi(char *x, int m, int h[], int next[], int shift[]) {
     return (nd);
 }
 
-void COLUSSI(char *x, char *y, int *output) {
+void COLUSSI(char *x, int m, char *y,int n, int *output) {
     
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
+
     int p = 0;
     int i, j, last, nd, h[XSIZE], next[XSIZE], shift[XSIZE];
     

@@ -12,17 +12,18 @@
 @implementation MTKbruteforce
 
 // I think this is about a fast as real brute force can be. What could I change? 
-int p;
+
 #define EOS '\0'
 void BF(char *x, char *y, char *n) {
+    int inLoop = 0;
     char *yb;
     int m = (int)strlen(x);
     /* Searching */
     for (yb = y; *y != EOS; ++y)
     if (memcmp(x, y, m) == 0) {
-        n[p] = y - yb;
+        n[inLoop] = y - yb;
           printf("Found pattern at index %ld \n", y - yb);
-        p++;
+        inLoop++;
         break;
     }
 

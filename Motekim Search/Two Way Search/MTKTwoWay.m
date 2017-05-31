@@ -90,10 +90,9 @@ int maxSufTilde(char *x, int m, int *p) {
 
 
 /* Two Way string matching algorithm. */
-void TW(char *x, char *y, int *output) {
+void TWASearch(char *x,int m, char *y,int n, int *output) {
     
-    int m = (int)strlen(x);
-    int n = (int)strlen(y);
+
     int insideLoop = 0;
     
     int i, j, ell, memory, p, per, q;

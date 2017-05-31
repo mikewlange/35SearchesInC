@@ -12,6 +12,10 @@
 @implementation util
 
 
+void outp( int pos ) {
+    static int matches = 0;
+    printf( "match %d found at position %d\n", ++matches, pos );
+}
 /**
   returns a new data structure for
  a graph with v vertices and e edges

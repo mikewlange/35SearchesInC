@@ -12,7 +12,7 @@
 // sanmayce.com for the Railgun monsters
 // The internet for the rest. 
 
-
+#include <Foundation/Foundation.h>
 #include "includeme.h"
 
 @interface util : NSObject
@@ -32,7 +32,9 @@ typedef struct _graph *Graph;
 typedef int boolean;
 
 #define UNDEFINED -1
-
+//void setTransition(int p, int q, List L[]);
+//int getTransition(char *x, int p, List L[], char c) ;
+void outp( int pos );
 /**
  <#Description#>
 

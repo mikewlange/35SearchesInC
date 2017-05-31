@@ -1,5 +1,5 @@
 //
-//  MTKShiftAnd.h
+//  bmh-sbndm.h
 //  Motekim Search
 //
 //  Created by Michael Lange on 5/29/17.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MTKShiftAnd : NSObject
+@interface bmh_sbndm : NSObject
 
 @end
-int searchSHIFTAND(unsigned char *x, int m, unsigned char *y, int n, int* RCout);
+int searchsbndm( char *x, char *y, int *nout);
