@@ -1,4 +1,4 @@
-# Motekim-Search [![Build Status](https://travis-ci.org/mikewlange/Motekim-Search.svg?branch=master)](https://travis-ci.org/mikewlange/Motekim-Search)
+# Motekim-Search [![Build Status](https://travis-ci.org/mikewlange/35-Super-Fast-Full-Text-Search-Algorithms.svg?branch=master)](https://travis-ci.org/mikewlange/35-Super-Fast-Full-Text-Search-Algorithms)
 Tons of search functions written in c. LLVM/Xcode. Will be adding more in the days to come. See tests for now. 
 
 Good Read: https://arxiv.org/abs/1012.2547 # The Algos Note: I snagged these from all over the internet. And a few I came up with. 
