@@ -13,7 +13,9 @@ These are most of the full text search algos out there I think.
 
 I even found some esoteric ones that are blazing compared to the "standard" ones. You'll know them by their name as you'll have never heard of it. 
 
-This has been an interesting exercize'. Each one of these excell in specific scenarios. Some more universal than others. Lots of unexpected on specific data types. This is exciting because there is a strong possibility it's quite easy to improve every search platform/algo in existence via simple genetic algos and ML. That's a big one. But in dev. Similar to https://github.com/mikewlange/Kettle--Tpot-for-GPU-AI but for seach critera/algo/content. Hopefully no one read that last sentance as you now have a billian dollar search platform if you put in the work before me.  
+This has been an interesting exercize'. Each one of these excell in specific scenarios. Some more universal than others. Lots of unexpected on specific data types. This is exciting because there is a strong possibility it's quite easy to improve every search platform/algo in existence via simple genetic algos and ML. That's a big one. But in dev. Similar to https://github.com/mikewlange/Kettle--Tpot-for-GPU-AI but for search critera/algo deduction/content. 
+
+Hopefully no one reads that last sentance as you now have a billian dollar search platform if you put in the work before me.  
 
 Here they are in no particular order. 
 
