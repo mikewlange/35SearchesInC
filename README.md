@@ -1,7 +1,50 @@
 # Motekim-Search [![Build Status](https://travis-ci.org/mikewlange/35-Super-Fast-Search-Algorithms.svg?branch=master)](https://travis-ci.org/mikewlange/35-Super-Fast-Search-Algorithms)
-Tons of search functions written in c. LLVM/Xcode. Will be adding more in the days to come. See tests for now. 
 
-Good Read: https://arxiv.org/abs/1012.2547 # The Algos Note: I snagged these from all over the internet. And a few I came up with. 
+
+All funtion written in c and wrapped in swift. 
+
+The Algorithms:
+
+Note: I renamed and made up a few - which are the best ones. But 90% you know. 
+
+Boyer-Moore algorithm
+Alpha Skip
+Apostolico-Crochemore algorithm
+Apostolico-Giancarlo algorithm
+BMH-SBNDM
+BRUTE FORCE SEARCH
+BackwardOracle
+Berry-Ravindran algorithm
+Boyer-Moore-Horspool
+Colussi algorithm
+Deterministic Finite Automaton algorithm
+Extended-BOM
+Franek-Jennings-Smyth
+Galil-Giancarlo algorithm
+Galil-Seiferas
+KMP Skip Search algorithm
+Karp-Rabin algorithm
+Knuth-Morris-Pratt
+Morris-Pratt
+Motekim_Search.xcdatamodeld
+Optimal Mismatch algorithm
+Ordered Alphabets
+Quick Search
+Railgun String Search   (CAN'T BE BEAT OR BROKEN)
+Research with an automaton search
+Reverse Colussi algorithm
+Reverse Fuck All
+SIMON!
+ShiftAnd
+Shifty and Fuzzy
+Skip Search
+Turbo-BM algorithm
+Two Way Search
+Viva Hate
+Zhu-Takaoka algorith
+
+
+Good Read: https://arxiv.org/abs/1012.2547 # 
 
 It's very simple to use Swift and c side by by side.  
 
