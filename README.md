@@ -8,8 +8,11 @@ The Algorithms:
 Note: I renamed and made up a few - which are the best ones. But 90% you know. 
 
 Boyer-Moore algorithm
+
 Alpha Skip
+
 Apostolico-Crochemore algorithm
+
 Apostolico-Giancarlo algorithm
 BMH-SBNDM
 BRUTE FORCE SEARCH
@@ -36,11 +39,17 @@ Reverse Colussi algorithm
 Reverse Fuck All
 SIMON!
 ShiftAnd
+
 Shifty and Fuzzy
+
 Skip Search
+
 Turbo-BM algorithm
+
 Two Way Search
+
 Viva Hate
+
 Zhu-Takaoka algorith
 
 
