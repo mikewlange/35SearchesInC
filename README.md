@@ -14,30 +14,53 @@ Alpha Skip
 Apostolico-Crochemore algorithm
 
 Apostolico-Giancarlo algorithm
+
 BMH-SBNDM
+
 BRUTE FORCE SEARCH
+
 BackwardOracle
+
 Berry-Ravindran algorithm
+
 Boyer-Moore-Horspool
+
 Colussi algorithm
+
 Deterministic Finite Automaton algorithm
+
 Extended-BOM
+
 Franek-Jennings-Smyth
+
 Galil-Giancarlo algorithm
+
 Galil-Seiferas
+
 KMP Skip Search algorithm
+
 Karp-Rabin algorithm
+
 Knuth-Morris-Pratt
+
 Morris-Pratt
-Motekim_Search.xcdatamodeld
+
 Optimal Mismatch algorithm
+
 Ordered Alphabets
+
 Quick Search
+
 Railgun String Search   (CAN'T BE BEAT OR BROKEN)
+
 Research with an automaton search
+
 Reverse Colussi algorithm
+
 Reverse Fuck All
+
 SIMON!
+
 ShiftAnd
 
 Shifty and Fuzzy
