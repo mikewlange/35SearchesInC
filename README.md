@@ -1,7 +1,7 @@
 # Motekim-Search [![Build Status](https://travis-ci.org/mikewlange/35-Super-Fast-Search-Algorithms.svg?branch=master)](https://travis-ci.org/mikewlange/35-Super-Fast-Search-Algorithms)
 
 
-All funtion written in c and wrapped in swift. 
+All funtions written in c and wrapped in swift. Build in xcode if you wish. 
 
 The Algorithms:
 
